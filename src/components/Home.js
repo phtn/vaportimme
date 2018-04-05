@@ -1,26 +1,30 @@
 import React from 'react'
 import Slider from 'react-slick'
 import Store from '../assets/store_medium.jpg'
-import { Grid, Card, Image } from 'semantic-ui-react'
+import Wheel from '../assets/cbd_wheel.jpg'
+import { Grid, Card, Image, Segment } from 'semantic-ui-react'
 const settings = {
   dots: true,
   infinite: true,
   arrows: false,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  centerMode: true
 }
 
 const styles = {
-  container: { marginTop: 10}
+  container: { marginTop: 10},
+  slides: {textAlign: 'center !important', width: '100%', border: '1px solid red '},
+  jumbotron: { marginTop: 25}
 }
 export default props => (
   <div style={styles.container}>
     <Slider {...settings}>
-      <div >
+      <div style={styles.slides}>
         <Grid divided='vertically'>
           <Grid.Row columns={3}>
-          <Grid.Column>
+          <Grid.Column >
             <Card color='purple'>
               <Image src={Store} />
               <Card.Content>
@@ -33,7 +37,7 @@ export default props => (
             <Card color='purple'>
               <Image src={Store} />
               <Card.Content>
-                <Card.Header>Store</Card.Header>
+                <Card.Header>Juice</Card.Header>
               </Card.Content>
           </Card>
           </Grid.Column>
@@ -42,7 +46,7 @@ export default props => (
             <Card color='purple'>
               <Image src={Store} />
               <Card.Content>
-                <Card.Header>Store</Card.Header>
+                <Card.Header>Equipment</Card.Header>
               </Card.Content>
           </Card>
           </Grid.Column>
@@ -58,6 +62,13 @@ export default props => (
       <div>2</div>
       <div>3</div>
     </Slider>
+
+    <div style={styles.jumbotron}>
+      <Segment>
+        Imtroducing the CBD Oil: Uses, Benefits and Risks 
+        <Image src={Wheel} />   
+      </Segment>
+    </div>
   </div>
 )
 
