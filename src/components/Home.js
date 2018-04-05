@@ -5,13 +5,14 @@ import { Grid, Card, Image } from 'semantic-ui-react'
 const settings = {
   dots: true,
   infinite: true,
+  arrows: false,
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1
 }
 
 const styles = {
-  container: { margin: 10}
+  container: { marginTop: 10}
 }
 export default props => (
   <div style={styles.container}>
