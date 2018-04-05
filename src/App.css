@@ -3,7 +3,7 @@ body{
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -12,7 +12,14 @@ body{
   margin-bottom: 0;
 }
 
+.Footer-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 40px;
+  margin-bottom: 0;
+}
+
 .App-header {
+  text-align: center;
   background-color: #222;
   height: 150px;
   padding-top: 10px;
