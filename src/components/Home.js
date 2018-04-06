@@ -12,12 +12,12 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  centerMode: true
+  // centerMode: true
 }
 
 const styles = {
   container: { marginTop: 10},
-  slides: {textAlign: 'center !important', width: '100%', border: '1px solid red '},
+  slides: { border: '1px solid red '},
   jumbotron: { marginTop: 25}
 }
 export default props => (
