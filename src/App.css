@@ -2,6 +2,10 @@ body{
   background-color: #eee;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+}
+
 .App {
   /* text-align: center; */
 }
@@ -19,8 +23,13 @@ body{
 }
 
 .App-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+  background: #E8CBC0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  background-color: #222;
+  /* background-color: #111; */
   height: 150px;
   padding-top: 10px;
   color: #eee;
