@@ -20,7 +20,7 @@ const styles = {
   container: { marginTop: 10},
   segment: { margin: 20 },
   jumbotron: { marginTop: 25},
-  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 100}
+  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: '.9em'}
 }
 export default props => (
   <div style={styles.container}>
