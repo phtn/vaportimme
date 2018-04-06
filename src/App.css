@@ -5,6 +5,15 @@ body{
 ::-webkit-scrollbar { 
   display: none; 
 }
+.logo {
+  transition: all .9s ease;
+  -webkit-transform: rotateX(0deg);
+  -webkit-transform-origin-y: 30px;
+}
+.logo:hover {
+  /* -webkit-transform: rotateX(60deg); */
+  -webkit-transform: rotateY(-30deg);
+}
 
 .App {
   /* text-align: center; */
@@ -20,6 +29,16 @@ body{
   /* animation: App-logo-spin infinite 20s linear; */
   height: 40px;
   margin-bottom: 0;
+}
+
+.App-verify {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  
+  text-align: center;
+  /* background-color: #111; */
+  height: auto;
+  padding-top: 10px;
+  color: #eee;
 }
 
 .App-header {
