@@ -19,7 +19,8 @@ import { Grid, Card, Image, Segment, Item } from 'semantic-ui-react'
 const styles = {
   container: { marginTop: 10},
   segment: { margin: 20 },
-  jumbotron: { marginTop: 25}
+  jumbotron: { marginTop: 25},
+  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 100}
 }
 export default props => (
   <div style={styles.container}>
@@ -29,7 +30,7 @@ export default props => (
             <Card color='purple' centered className='animated fadeIn cardONe'>
               <Image src={Store} />
               <Card.Content>
-                <Card.Header>Store</Card.Header>
+                <Card.Header style={styles.cardHeader}>STORE</Card.Header>
               </Card.Content>
           </Card>
           </Grid.Column>
@@ -38,7 +39,7 @@ export default props => (
             <Card color='purple' centered className='animated fadeIn cardTwo'>
               <Image src={Juice} />
               <Card.Content>
-                <Card.Header>Juice</Card.Header>
+                <Card.Header style={styles.cardHeader}>JUICE</Card.Header>
               </Card.Content>
           </Card>
           </Grid.Column>
@@ -47,7 +48,7 @@ export default props => (
             <Card color='purple' centered className='animated fadeIn cardThree'>
               <Image src={Equip} />
               <Card.Content>
-                <Card.Header>Equipment</Card.Header>
+                <Card.Header style={styles.cardHeader}>EQUIPMENT</Card.Header>
               </Card.Content>
           </Card>
           </Grid.Column>
