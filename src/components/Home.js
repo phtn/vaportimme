@@ -1,19 +1,19 @@
 import React from 'react'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import Store from '../assets/store_medium.jpg'
 import Juice from '../assets/juice_medium.jpg'
 import Equip from '../assets/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
 import { Grid, Card, Image, Segment, Item } from 'semantic-ui-react'
-const settings = {
-  dots: true,
-  infinite: true,
-  arrows: false,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  // centerMode: true
-}
+// const settings = {
+//   dots: false,
+//   infinite: true,
+//   arrows: false,
+//   speed: 500,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   // centerMode: true
+// }
 
 const styles = {
   container: { marginTop: 10},
@@ -22,12 +22,10 @@ const styles = {
 }
 export default props => (
   <div style={styles.container}>
-    <Slider {...settings}>
-      <div style={styles.slides}>
-        <Grid divided='vertically'>
-          <Grid.Row columns={3}>
-          <Grid.Column >
-            <Card color='purple'>
+        <Grid padded='horizontally'>
+          <Grid.Row columns={3} textAlign='center'>
+          <Grid.Column textAlign='center'>
+            <Card color='purple' centered>
               <Image src={Store} />
               <Card.Content>
                 <Card.Header>Store</Card.Header>
@@ -36,7 +34,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple'>
+            <Card color='purple' centered>
               <Image src={Juice} />
               <Card.Content>
                 <Card.Header>Juice</Card.Header>
@@ -45,7 +43,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple'>
+            <Card color='purple' centered>
               <Image src={Equip} />
               <Card.Content>
                 <Card.Header>Equipment</Card.Header>
@@ -60,10 +58,7 @@ export default props => (
         
 
 
-      </div>
-      <div>2</div>
-      <div>3</div>
-    </Slider>
+      
 
     <div style={styles.jumbotron}>
       <Segment>
