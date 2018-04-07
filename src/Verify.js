@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Image, Grid, Message } from 'semantic-ui-react'
 import Logo from './assets/logo.png'
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import App from './App'
 const styles = {
   container: { 
@@ -49,9 +49,9 @@ const Verifier = props => (
 
 export default props => (
   <Router>
-    <div>
+    <Switch>
       <Route exact path='/' component={Verifier}/>
       <Route path='/home' component={App}/>
-    </div>
+    </Switch>
   </Router>
 )
