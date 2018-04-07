@@ -50,7 +50,7 @@ const Verifier = props => (
 export default props => (
   <Router>
     <div>
-      <Route exact path='/' render={Verifier}/>
+      <Route exact path='/' component={Verifier}/>
       <Route path='/home' component={App}/>
     </div>
   </Router>
