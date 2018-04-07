@@ -51,7 +51,7 @@ export default props => (
   <Router>
     <div>
       <Route exact path='/' render={Verifier}/>
-      <Route strict path='/home' component={App}/>
+      <Route path='/home' component={App}/>
     </div>
   </Router>
 )

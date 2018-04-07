@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo jello animated" alt="logo" />
+          <img src={logo} className="App-logo fadeInDown animated" alt="logo" />
           <h1 className="App-title">Custom E-Cigarette Store of New Hope</h1>
         </header>
         <Home/>

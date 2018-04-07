@@ -5,6 +5,8 @@ import Juice from '../assets/juice_medium.jpg'
 import Equip from '../assets/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
 import Vaping from '../assets/vaping.PNG'
+import Video from './Video'
+
 import { Grid, Card, Image, Segment, Item } from 'semantic-ui-react'
 // const settings = {
 //   dots: false,
@@ -22,6 +24,8 @@ const styles = {
   jumbotron: { marginTop: 25},
   cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: '.9em'}
 }
+
+
 export default props => (
   <div style={styles.container}>
         <Grid padded='horizontally'>
@@ -87,6 +91,10 @@ export default props => (
               </Item.Description>
               <Item.Extra>Read More...</Item.Extra>
             </Item.Content>
+          </Item>
+
+          <Item>
+            <Video/>
           </Item>
   
         </Item.Group>
