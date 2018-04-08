@@ -40,6 +40,43 @@ body{
   padding-top: 10px;
   color: #eee;
 }
+.verifylogo {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+}
+.yup {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+  width: 175px;
+}
+.nope {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .7s;
+  width: 175px;
+}
+.warning {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .9s;
+}
+
+.cardOne {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+  width: 175px;
+}
+.cardTwo {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .7s;
+  width: 175px;
+}
+.cardThree {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .9s;
+}
+.blogsegment{
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+}
 
 .App-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */

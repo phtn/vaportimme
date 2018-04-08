@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Embed } from 'semantic-ui-react'
 
 class Video extends Component {
   render(){

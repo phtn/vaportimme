@@ -31,8 +31,8 @@ export default props => (
         <Grid padded='horizontally'>
           <Grid.Row columns={3} textAlign='center'>
           <Grid.Column textAlign='center'>
-            <Card color='purple' centered className='animated fadeIn cardONe'>
-              <Image src={Store} onLoad={()=> console.log()}/>
+            <Card color='purple' centered className='animated fadeInUp cardOne'>
+              <Image src={Store} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>STORE</Card.Header>
               </Card.Content>
@@ -40,7 +40,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple' centered className='animated fadeIn cardTwo'>
+            <Card color='purple' centered className='animated fadeInUp cardTwo'>
               <Image src={Juice} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>JUICE</Card.Header>
@@ -49,7 +49,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple' centered className='animated fadeIn cardThree'>
+            <Card color='purple' centered className='animated fadeInUp cardThree'>
               <Image src={Equip} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>EQUIPMENT</Card.Header>
@@ -67,7 +67,7 @@ export default props => (
       
 
     <div style={styles.jumbotron}>
-      <Segment style={styles.segment}>
+      <Segment style={styles.segment} className='animated fadeInUp blogsegment'>
         <Item.Group divided>
   
           <Item>
