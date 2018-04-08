@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Embed } from 'semantic-ui-react'
-import Vaping from '../assets/vaping.PNG'
 
 class Video extends Component {
   render(){
