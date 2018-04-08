@@ -1,10 +1,10 @@
 import React from 'react'
 // import Slider from 'react-slick'
-import Store from '../assets/store_medium.jpg'
-import Juice from '../assets/juice_medium.jpg'
-import Equip from '../assets/equip_medium.jpg'
+import Store from '../assets/resized/store_medium.jpg'
+import Juice from '../assets/resized/juice_medium.jpg'
+import Equip from '../assets/resized/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
-import Vaping from '../assets/vaping.PNG'
+import Vaping from '../assets/resized/vaping_medium.jpg'
 import Video from './Video'
 
 import { Grid, Card, Image, Segment, Item } from 'semantic-ui-react'
@@ -32,7 +32,7 @@ export default props => (
           <Grid.Row columns={3} textAlign='center'>
           <Grid.Column textAlign='center'>
             <Card color='purple' centered className='animated fadeIn cardONe'>
-              <Image src={Store} />
+              <Image src={Store} onLoad={()=> console.log()}/>
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>STORE</Card.Header>
               </Card.Content>
