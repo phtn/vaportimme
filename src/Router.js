@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Router, Route, Switch,  } from 'react-router-dom'
 // Routes
 import AgeVerifier from './components/AgeVerifier'
 import App from './App'
