@@ -40,7 +40,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple' centered className='animated fadeInUp cardTwo'  as='a' href='/juiceflavors'>
+            <Card color='purple' centered className='animated fadeInUp cardTwo' onClick={props.juice}>
               <Image src={Juice} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>JUICE</Card.Header>

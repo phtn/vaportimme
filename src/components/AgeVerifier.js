@@ -32,7 +32,7 @@ export default props => (
         <h1 style={styles.header}>New Hope's Best Custom E-Cigarettte Store</h1>
       </Grid.Row>
       <Grid.Row centered>
-        <Button positive as='a' href='/home' className='yup animated fadeInUp'>I am 18 and over</Button>
+        <Button positive className='yup animated fadeInUp'  onClick={props.goHome}>I am 18 and over</Button>
         <Button primary as='a' href='https://www.google.com' className='nope animated fadeInUp'>I'm under 18</Button>
       </Grid.Row>
 

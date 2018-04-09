@@ -1,16 +1,15 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-// Routes
-import AgeVerifier from './components/AgeVerifier'
-import App from './App'
-import Juice from './components/Juice'
+import React, { Component } from 'react'
+// Component Routes
+import { observer } from 'mobx-react'
+import Routes from './Observable'
 
-export default props => (
-  <Router>
-    <div>
-      <Route exact path='/' component={AgeVerifier}/>
-      <Route path='/home' component={App}/>
-      <Route path='/juiceflavors' component={Juice}/>
-    </div>
-  </Router>
-)
+const route = new Routes()
+
+const Router = observer ( class App extends Component {
+  render(){
+    return (
+      <div>{route.renderComponent}</div>
+    )
+  }
+})
+export default Router

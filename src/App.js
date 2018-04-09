@@ -45,8 +45,8 @@ class App extends Component {
           <p style={styles.phone}>T 215.693.1905</p>
           <h1 style={styles.header}>New Hope's Best Custom E-Cigarettte Store</h1>
         </header>
-        <Home/>
-        <Footer/>
+        <Home juice={this.props.juice}/>
+        <Footer />
       </div>
     );
   }

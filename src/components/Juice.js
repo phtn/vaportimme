@@ -220,8 +220,8 @@ export default props => (
   <div style={styles.container}>
 
     <Menu attached='top' stackable>
-      <Menu.Item color='teal'>
-        <a href='/home'><Icon name='chevron left' /> Back</a>
+      <Menu.Item color='teal' onClick={props.back}>
+        <Icon name='chevron left' /> Back
       </Menu.Item>
       <Menu.Item >
         <p><span style={styles.strong}>Bottle Sizes (ml):</span> 15, 30, 60, 120</p>
