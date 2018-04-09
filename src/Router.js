@@ -7,8 +7,10 @@ import Juice from './components/Juice'
 
 export default props => (
   <Router>
-    <Route exact path='/' component={AgeVerifier}/>
-    <Route path='/home' component={App}/>
+    <div>
+      <Route exact path='/' component={AgeVerifier}/>
+      <Route path='/home' component={App}/>
       <Route path='/juiceflavors' component={Juice}/>
+    </div>
   </Router>
 )
