@@ -40,7 +40,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple' centered className='animated fadeInUp cardTwo'>
+            <Card color='purple' centered className='animated fadeInUp cardTwo'  as='a' href='/juiceflavors'>
               <Image src={Juice} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>JUICE</Card.Header>
@@ -76,7 +76,7 @@ export default props => (
               <Item.Header as='a'>Introducing the CBD Oil: Uses, Benefits and Risks </Item.Header>
               <Item.Meta>Cannabidiol (CBD) oil is used for health benefits, but it is controversial.</Item.Meta>
               <Item.Description>
-              source: [Leafly]
+              Source: [Leafly]
               </Item.Description>
               <Item.Extra>Read More...</Item.Extra>
             </Item.Content>

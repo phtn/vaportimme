@@ -1,10 +1,6 @@
 import React from 'react'
 import { Button, Image, Grid, Label, Icon } from 'semantic-ui-react'
-import Logo from './assets/logo.png'
-// import Warning from './assets/warning.svg'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import App from './App'
-
+import Logo from '../assets/logo.png'
 const styles = {
   container: { 
     height: window.innerHeight,
@@ -15,19 +11,29 @@ const styles = {
   logo: {
     height: 100,
     float: 'left'
+  },
+  header: {
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: 400,
+    fontSize: '1em',
+    color: '#eee',
+    lineHeight: '5px'
   }
 }
 
-const Verifier = props => (
+export default props => (
   <div className='App-verify' style={styles.container}>
+    
     <Grid padded>
-      <Grid.Row rows={2} centered>
-        <Image src={Logo} style={styles.logo} className='verifylogo animated fadeInDown'/>   
+      <Grid.Row centered>
+        <Image src={Logo} style={styles.logo} className='verifylogo animated fadeInDown logo'/>   
       </Grid.Row>
-
+      <Grid.Row centered>
+        <h1 style={styles.header}>New Hope's Best Custom E-Cigarettte Store</h1>
+      </Grid.Row>
       <Grid.Row centered>
         <Button positive as='a' href='/home' className='yup animated fadeInUp'>I am 18 and over</Button>
-        <Button primary as='a' href='https://www.google.com' className='nope animated fadeInUp'>Get me outta here</Button>
+        <Button primary as='a' href='https://www.google.com' className='nope animated fadeInUp'>I'm under 18</Button>
       </Grid.Row>
 
       <Grid.Row centered>
@@ -41,13 +47,4 @@ const Verifier = props => (
     </Grid>
     
   </div>
-)
-
-export default props => (
-  <Router>
-    <Switch>
-      <Route exact path='/' component={Verifier}/>
-      <Route path='/home' component={App}/>
-    </Switch>
-  </Router>
 )
