@@ -1,7 +1,8 @@
 import React from 'react'
 // import Slider from 'react-slick'
 import Store from '../assets/resized/store_medium.jpg'
-import Juice from '../assets/resized/juice_medium.jpg'
+import Juice from '../assets/resized/juice_med.jpg'
+import CBD from '../assets/resized/cbd_medium.jpg'
 import Equip from '../assets/resized/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
 import Vaping from '../assets/resized/vaping_medium.jpg'
@@ -29,18 +30,27 @@ const styles = {
 export default props => (
   <div style={styles.container}>
         <Grid padded='horizontally'>
-          <Grid.Row columns={3} textAlign='center'>
+          <Grid.Row columns={4} textAlign='center'>
           <Grid.Column textAlign='center'>
             <Card color='purple' centered className='animated fadeInUp cardOne'>
               <Image src={Store} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>STORE</Card.Header>
               </Card.Content>
-          </Card>
+            </Card>
+          </Grid.Column>
+
+          <Grid.Column textAlign='center'>
+            <Card color='purple' centered className='animated fadeInUp cardOne' onClick={props.oil}>
+              <Image src={CBD} />
+              <Card.Content>
+                <Card.Header style={styles.cardHeader}>CBD</Card.Header>
+              </Card.Content>
+            </Card>
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple' centered className='animated fadeInUp cardTwo' onClick={props.juice}>
+            <Card color='purple' centered className='animated fadeInUp cardTwo card-2' onClick={props.juice}>
               <Image src={Juice} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>JUICE</Card.Header>
@@ -52,7 +62,7 @@ export default props => (
             <Card color='purple' centered className='animated fadeInUp cardThree'>
               <Image src={Equip} />
               <Card.Content>
-                <Card.Header style={styles.cardHeader}>EQUIPMENT</Card.Header>
+                <Card.Header style={styles.cardHeader}>EQUIP</Card.Header>
               </Card.Content>
           </Card>
           </Grid.Column>
