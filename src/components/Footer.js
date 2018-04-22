@@ -12,7 +12,7 @@ const styles = {
     height: 'auto',
     textAlign: 'center',
     fontFamily: 'Roboto, sans-serif',
-    fontWeight: 100,
+    fontWeight: 400,
     letterSpacing: 1,
     color: '#999',
     paddingTop: 30,

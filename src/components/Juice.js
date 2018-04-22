@@ -2,6 +2,7 @@ import React from 'react'
 import { Item, Rating, Menu, Segment, Icon } from 'semantic-ui-react'
 import Header from './Header'
 import Juices from '../static/juices'
+import Footer from './Footer'
 
 
 const styles = {
@@ -23,7 +24,7 @@ export default props => (
     <div style={styles.segment}>
       <Menu attached='top' stackable>
         <Menu.Item color='teal' onClick={props.back} position='left'>
-          <Icon name='chevron left' /> Back
+          <Icon name='chevron left' /> Back to Home
         </Menu.Item>
         <Menu.Item >
           <p><span style={styles.strong}>Bottle Sizes (ml):</span> 15, 30, 60, 120</p>
@@ -37,6 +38,8 @@ export default props => (
         <Item.Group items={Juices} divided className='animated fadeInUp'/>
       </Segment>
     </div>
+
+    <Footer />
     
   </div>
 )

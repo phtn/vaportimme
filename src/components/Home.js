@@ -23,7 +23,7 @@ const styles = {
   container: { marginTop: 10},
   segment: { margin: 20 },
   jumbotron: { marginTop: 25},
-  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: '.9em'}
+  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '.9em'}
 }
 
 
