@@ -8,7 +8,7 @@ import Oil from './components/Oil'
 class RouteObservable {
   constructor(){
     extendObservable(this, {
-      component: 'oil',
+      component: 'verify',
       set setComponent(comp){
         return this.component = comp
       },
