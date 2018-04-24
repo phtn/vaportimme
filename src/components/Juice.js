@@ -11,6 +11,11 @@ const styles = {
   container: {
     fontFamily: 'Roboto, sans-serif',
   },
+  title: {
+    fontSize: 18,
+    color: 'purple',
+    fontWeight: 'bolder'
+  },
   segment: {
     margin: 10,
   },
@@ -21,7 +26,8 @@ const styles = {
     fontWeight: 'bolder'
   },
   back: {
-    color: 'purple'
+    color: 'purple',
+    fontWeight: 'bolder'
   },
   valueLabel: {
     fontSize: 18
@@ -34,9 +40,12 @@ export default props => (
     
     <div style={styles.segment}>
       <Menu attached='top' stackable>
-        <Menu.Item color='teal' onClick={props.back} position='left'>
-          <Icon name='chevron left' /> 
-          <p style={styles.back}>Back to Home</p>
+        <Menu.Item color='teal' onClick={props.juice} position='left'>
+          <Icon name='eyedropper' size='big'/> 
+          <p style={styles.title}>JUICE</p>
+        </Menu.Item>
+        <Menu.Item color='teal' onClick={props.back} position='right'>
+          <Icon name='window close outline' size='big' color='red'/> 
         </Menu.Item>
         
       </Menu>
@@ -69,25 +78,25 @@ export default props => (
       <Menu attached='bottom' widths='7'>
         
         <Menu.Item>
-          <Image src={Droplet} height={20} /><p style={styles.valueLabel}> 0 mg</p>
+          <Image src={Droplet} height={20} /><p style={styles.valueLabel}> 0</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={21} /><p style={styles.valueLabel}> 3 mg</p>
+          <Image src={Droplet} height={21} /><p style={styles.valueLabel}> 3</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={22} /><p style={styles.valueLabel}> 6 mg</p>
+          <Image src={Droplet} height={22} /><p style={styles.valueLabel}> 6</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={23} /><p style={styles.valueLabel}> 9 mg</p>
+          <Image src={Droplet} height={23} /><p style={styles.valueLabel}> 9</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={24} /><p style={styles.valueLabel}> 12 mg</p>
+          <Image src={Droplet} height={24} /><p style={styles.valueLabel}> 12</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={25} /><p style={styles.valueLabel}> 18 mg</p>
+          <Image src={Droplet} height={25} /><p style={styles.valueLabel}> 18</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={26} /><p style={styles.valueLabel}> 24 mg</p>
+          <Image src={Droplet} height={26} /><p style={styles.valueLabel}> 24</p>
         </Menu.Item>
       </Menu>
       </Segment>

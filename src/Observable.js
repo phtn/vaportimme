@@ -9,7 +9,7 @@ import Store from './components/Store'
 class RouteObservable {
   constructor(){
     extendObservable(this, {
-      component: 'store',
+      component: 'oil',
       set setComponent(comp){
         return this.component = comp
       },

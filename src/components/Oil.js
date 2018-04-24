@@ -33,7 +33,6 @@ const styles = {
     fontSize: 18
   },
   segmentTitle: {
-    fontSize: 18,
     fontWeight: 'bolder'
   },
   back: {
@@ -84,13 +83,13 @@ export default props => (
           <p style={styles.segmentTitle}>CBD Level (mg)</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={20} /> <p style={styles.valueLabel}>250 mg</p>
+          <Image src={Droplet} height={20} /> <p style={styles.valueLabel}>250</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={23} /> <p style={styles.valueLabel}>500 mg</p>
+          <Image src={Droplet} height={23} /> <p style={styles.valueLabel}>500</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Droplet} height={26} /> <p style={styles.valueLabel}>1000 mg</p>
+          <Image src={Droplet} height={26} /> <p style={styles.valueLabel}>1000</p>
         </Menu.Item>
       </Menu>
       </Segment>
@@ -102,13 +101,13 @@ export default props => (
       <Segment attached='bottom'>
       <Menu attached='top' widths='4'>
         <Menu.Item>
-          CBD Level (mg)
+          <p style={styles.segmentTItle}>CBD Level (mg)</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Balm} height={20} /> <p style={styles.valueLabel}>500 mg</p>
+          <Image src={Balm} height={20} /> <p style={styles.valueLabel}>500</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Balm} height={23} /> <p style={styles.valueLabel}>1000 mg</p>
+          <Image src={Balm} height={23} /> <p style={styles.valueLabel}>1000</p>
         </Menu.Item>
         <Menu.Item>
         </Menu.Item>
