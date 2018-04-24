@@ -73,7 +73,7 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-            <Card color='purple' centered className='animated fadeInUp cardThree'>
+            <Card color='purple' centered className='animated fadeInUp cardThree' onClick={props.equip}>
               <Image src={Equip} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>EQUIP</Card.Header>
@@ -120,7 +120,7 @@ export default props => (
           <Item>
             <Video/>
           </Item>
-          <Divider/>
+          {/* <Divider/> */}
           <Segment >
           <Item >
             <h1 style={styles.humanTitle}>Benefits of Vaping</h1>

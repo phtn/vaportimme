@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Menu, Icon, Segment, Image, Divider, Card } from 'semantic-ui-react'
+import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
 import Store1 from '../assets/store1.jpg'
@@ -41,29 +41,29 @@ export default props => (
         <Divider/>
       </Segment>
       <Segment attached >
-        <Card raised>
-          <Card.Content>
+        <Card raised fluid>
+          <Card.Content textAlign='center'>
             <Image src={Store3} alt=''/>
           </Card.Content>
 
           
         </Card>
-        <Card raised>
-          <Card.Content>
+        <Card raised fluid>
+          <Card.Content textAlign='center'>
             <Image src={Store1} alt=''/> 
           </Card.Content>
         </Card>
 
-        <Card raised>
+        <Card raised fluid>
           
 
-          <Card.Content>
+          <Card.Content textAlign='center'>
             <Image src={Store4} alt=''/> 
           </Card.Content>
         </Card>
       </Segment>
-      <Segment attached>
-        {/* <LiveCamera/> */}
+      <Segment attached textAlign='center'>
+        <Button primary as='a' href="https://maps.google.com/?q=15+W+Ferry+St+New+Hope+PA+18938"><Icon name='map' />Get Directions</Button>
       </Segment>
     </div>
 
