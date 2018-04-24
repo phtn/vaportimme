@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 const styles = {
   phone: {
     fontFamily: 'Roboto, sans-serif',
-    fontWeight: 100,
+    fontWeight: 400,
     fontSize: '1.3em',
     color: 'purple',
     lineHeight: '10px'

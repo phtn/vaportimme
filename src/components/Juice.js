@@ -41,11 +41,11 @@ export default props => (
     <div style={styles.segment}>
       <Menu attached='top' >
         <Menu.Item color='teal' onClick={props.juice} position='left'>
-          <Icon name='eyedropper' size='big'/> 
+          <Icon name='eyedropper' size='large' color='grey'/> 
           <p style={styles.title}>JUICE</p>
         </Menu.Item>
         <Menu.Item color='teal' onClick={props.back} position='right'>
-          <Icon name='window close outline' size='big' color='red'/> 
+          <Icon name='home' size='big' color='purple'/> 
         </Menu.Item>
       </Menu>
 

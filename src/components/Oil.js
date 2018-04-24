@@ -26,6 +26,11 @@ const styles = {
     fontWeight: 400,
     color: '#91DC5A'
   },
+  titleBar: {
+    fontSize: 18,
+    color: 'purple',
+    fontWeight: 'bolder'
+  },
   subtitle: {
     fontWeight: 400,
   },
@@ -33,7 +38,7 @@ const styles = {
     fontSize: 18
   },
   segmentTitle: {
-    fontWeight: 'bolder'
+    // fontWeight: 'bolder'
   },
   back: {
     color: 'purple'
@@ -45,9 +50,13 @@ export default props => (
     <Header />
     
     <div style={styles.segment}>
-      <Menu attached='top' stackable>
-        <Menu.Item color='teal' onClick={props.back} position='left'>
-          <Icon name='chevron left' /> <p style={styles.back}>Back to Home</p>
+    <Menu attached='top'>
+        <Menu.Item color='teal' onClick={props.oil} position='left'>
+          <Icon name='theme' size='large' color='grey'/> 
+          <p style={styles.titleBar}>CBD OIL</p>
+        </Menu.Item>
+        <Menu.Item color='teal' onClick={props.back} position='right'>
+          <Icon name='home' size='big' color='purple'/> 
         </Menu.Item>
       </Menu>
 
@@ -101,7 +110,7 @@ export default props => (
       <Segment attached='bottom'>
       <Menu attached='top' widths='4'>
         <Menu.Item>
-          <p style={styles.segmentTItle}>CBD Level (mg)</p>
+          <p style={styles.segmentTitle}>CBD Level (mg)</p>
         </Menu.Item>
         <Menu.Item>
           <Image src={Balm} height={20} /> <p style={styles.valueLabel}>500</p>

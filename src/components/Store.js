@@ -11,6 +11,11 @@ import Store4 from '../assets/store4.jpg'
 const styles={
   segment: {
     margin: 10
+  },
+  title: {
+    fontSize: 18,
+    color: 'purple',
+    fontWeight: 'bolder'
   }
 }
 
@@ -19,9 +24,13 @@ export default props => (
     <Header/>
     
     <div style={styles.segment}>
-      <Menu attached='top' stackable>
-        <Menu.Item color='teal' onClick={props.back} position='left'>
-          <Icon name='chevron left' /> <p style={styles.back}>Back to Home</p>
+    <Menu attached='top' >
+        <Menu.Item color='teal' onClick={props.juice} position='left'>
+          <Icon name='map signs' size='large' color='grey'/> 
+          <p style={styles.title}>STORE</p>
+        </Menu.Item>
+        <Menu.Item color='teal' onClick={props.back} position='right'>
+          <Icon name='home' size='big' color='purple'/> 
         </Menu.Item>
       </Menu>
 
