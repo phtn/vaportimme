@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Menu, Icon, Segment, Image } from 'semantic-ui-react'
+import { Menu, Icon, Segment, Image, Divider, Card } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
 import Store1 from '../assets/store1.jpg'
@@ -35,29 +35,32 @@ export default props => (
       </Menu>
 
       <Segment attached >
-        <h2>Vaportimme New Hope </h2>is the first E-cigarette store located right in the heart of New Hope, Pennsylvania.
+        <h2>Vaportimme New Hope </h2>
+        <p>15 W Ferry Street New Hope PA, 18938</p>
+        <p>215.693.1905</p>
+        <Divider/>
       </Segment>
       <Segment attached >
-        <Menu attached widths='1'>
-          <Menu.Item>
+        <Card raised>
+          <Card.Content>
             <Image src={Store3} alt=''/>
-          </Menu.Item>
+          </Card.Content>
 
           
-        </Menu>
-        <Menu attached widths='1'>
-          <Menu.Item>
+        </Card>
+        <Card raised>
+          <Card.Content>
             <Image src={Store1} alt=''/> 
-          </Menu.Item>
-        </Menu>
+          </Card.Content>
+        </Card>
 
-        <Menu attached widths='1'>
+        <Card raised>
           
 
-          <Menu.Item>
+          <Card.Content>
             <Image src={Store4} alt=''/> 
-          </Menu.Item>
-        </Menu>
+          </Card.Content>
+        </Card>
       </Segment>
       <Segment attached>
         {/* <LiveCamera/> */}

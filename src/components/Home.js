@@ -7,8 +7,8 @@ import Equip from '../assets/resized/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
 import Vaping from '../assets/resized/vaping_medium.jpg'
 import Video from './Video'
-
-import { Grid, Card, Image, Segment, Item } from 'semantic-ui-react'
+import Human from '../assets/human.svg'
+import { Grid, Card, Image, Segment, Item, Divider } from 'semantic-ui-react'
 // const settings = {
 //   dots: false,
 //   infinite: true,
@@ -23,7 +23,21 @@ const styles = {
   container: { marginTop: 10},
   segment: { margin: 20 },
   jumbotron: { marginTop: 25},
-  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '.9em'}
+  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '.9em'},
+  humanSubtext: {
+    position: 'absolute',
+    top: 60,
+    left: window.innerWidth/15
+
+  },
+  humanTitle: {
+    textAlign: 'center',
+  },
+  humanSubtitle: {
+    position: 'absolute',
+    top: 45,
+    left: window.innerWidth/5
+  }
 }
 
 
@@ -106,6 +120,16 @@ export default props => (
           <Item>
             <Video/>
           </Item>
+          <Divider/>
+          <Segment >
+          <Item >
+            <h1 style={styles.humanTitle}>Benefits of Vaping</h1>
+            <p style={styles.humanSubtitle}>vs Cigarette Smoking</p>
+            <p style={styles.humanSubtext}>Human Subtext</p>
+            <Image src={Human} alt='' centered  rounded/>
+          </Item>
+          </Segment>
+          
   
         </Item.Group>
       </Segment>
