@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Home oil={this.props.oil} juice={this.props.juice} />
+        <Home oil={this.props.oil} juice={this.props.juice} store={this.props.store}/>
         <Footer />
       </div>
     );

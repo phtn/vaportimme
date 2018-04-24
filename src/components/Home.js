@@ -32,7 +32,7 @@ export default props => (
         <Grid padded='horizontally'>
           <Grid.Row columns={4} textAlign='center'>
           <Grid.Column textAlign='center'>
-            <Card color='purple' centered className='animated fadeInUp cardOne'>
+            <Card color='purple' centered className='animated fadeInUp cardOne' onClick={props.store}>
               <Image src={Store} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>STORE</Card.Header>
