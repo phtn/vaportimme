@@ -122,12 +122,12 @@ export default props => (
           </Item>
           {/* <Divider/> */}
           <Segment >
-          <Item >
+          {/* <Item >
             <h1 style={styles.humanTitle}>Benefits of Vaping</h1>
             <p style={styles.humanSubtitle}>vs Cigarette Smoking</p>
             <p style={styles.humanSubtext}>Human Subtext</p>
             <Image src={Human} alt='' centered  rounded/>
-          </Item>
+          </Item> */}
           </Segment>
           
   

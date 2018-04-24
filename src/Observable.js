@@ -9,7 +9,7 @@ import Equip from './components/Equipment'
 class RouteObservable {
   constructor(){
     extendObservable(this, {
-      component: 'store',
+      component: 'home',
       set setComponent(comp){
         return this.component = comp
       },

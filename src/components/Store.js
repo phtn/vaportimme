@@ -63,6 +63,10 @@ export default props => (
         </Card>
       </Segment>
       <Segment attached textAlign='center'>
+        Live Video Feed Here
+        <Icon name='play' size='massive' color='grey'/>
+      </Segment>
+      <Segment attached textAlign='center'>
         <Button primary as='a' href="https://maps.google.com/?q=15+W+Ferry+St+New+Hope+PA+18938"><Icon name='map' />Get Directions</Button>
       </Segment>
     </div>
