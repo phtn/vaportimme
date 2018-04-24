@@ -39,7 +39,7 @@ export default props => (
     <Header />
     
     <div style={styles.segment}>
-      <Menu attached='top' stackable>
+      <Menu attached='top' >
         <Menu.Item color='teal' onClick={props.juice} position='left'>
           <Icon name='eyedropper' size='big'/> 
           <p style={styles.title}>JUICE</p>
@@ -47,7 +47,6 @@ export default props => (
         <Menu.Item color='teal' onClick={props.back} position='right'>
           <Icon name='window close outline' size='big' color='red'/> 
         </Menu.Item>
-        
       </Menu>
 
       <Segment attached>

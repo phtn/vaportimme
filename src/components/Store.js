@@ -2,6 +2,8 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Menu, Icon, Segment, Image } from 'semantic-ui-react'
+
+// import LiveCamera from './LiveCamera'
 import Store1 from '../assets/store1.jpg'
 import Store2 from '../assets/store2.jpg'
 import Store3 from '../assets/store3.jpg'
@@ -47,6 +49,9 @@ export default props => (
             <Image src={Store4} alt=''/> 
           </Menu.Item>
         </Menu>
+      </Segment>
+      <Segment attached>
+        {/* <LiveCamera/> */}
       </Segment>
     </div>
 
