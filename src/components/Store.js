@@ -33,7 +33,7 @@ export default props => (
           <Icon name='home' size='big' color='purple'/> 
         </Menu.Item>
       </Menu>
-
+      
       <Segment attached >
         <h2>Vaportimme New Hope </h2>
         <p>15 W Ferry Street New Hope PA, 18938</p>

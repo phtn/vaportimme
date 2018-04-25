@@ -10,7 +10,7 @@ import CBD from './components/CBD'
 class RouteObservable {
   constructor(){
     extendObservable(this, {
-      component: 'cbd',
+      component: 'verify',
       set setComponent(comp){
         return this.component = comp
       },

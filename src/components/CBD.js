@@ -92,6 +92,21 @@ export default props => (
         </Item>
 
 
+        <Item>
+          <Item.Content>
+            <Item.Header as='a'>Cure to various conditions</Item.Header>
+            <Item.Description>
+            <Segment>
+              <Menu stackable>
+                <Menu.Item>Acne</Menu.Item>
+                <Menu.Item>ADD & ADHD</Menu.Item>
+              </Menu>
+            </Segment>
+            </Item.Description>
+          </Item.Content>
+        </Item>
+
+
       </Item.Group>
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Menu, Icon, Segment, Image, Divider, Card, Item } from 'semantic-ui-react'
+import { Menu, Icon, Segment, Image, Divider, Card, Item, Button } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
 import Equip1 from '../assets/resized/equip_medium.jpg'
@@ -65,7 +65,7 @@ export default props => (
       <Segment attached >
         <h2>Get Your Complete Set Now!</h2>
             
-        <Menu stackable raised widths='2'>
+        <Menu stackable widths='2'>
             <Menu.Item>
                 <Image size='tiny' src={EleafLogo}/>
             </Menu.Item>
@@ -76,11 +76,25 @@ export default props => (
         <h3>
             Accessories
         </h3>
+        <Divider/>
         <p>Chargers</p>
         <p>Batteries</p>
         <p>Drip tips</p>
         <p>Replacements glass</p>
         <Divider/>
+      </Segment>
+
+      <Segment attached textAlign='center'>
+
+        <Button animated='fade' positive>
+            <Button.Content visible>
+                Call Customer Support
+            </Button.Content>
+            <Button.Content hidden>
+                <Icon name='phone' size='small' animated='vertical' />215 693 19-05
+            </Button.Content>
+        </Button>
+            
       </Segment>
     </div>
 
