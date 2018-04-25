@@ -97,7 +97,7 @@ export default props => (
           <Item>
           <Item.Image size='small' src={Wheel} />
             <Item.Content>
-              <Item.Header as='a'>Introducing the CBD Oil: Uses, Benefits and Risks </Item.Header>
+              <Item.Header as='a' onClick={props.cbd}>Introducing the CBD Oil: Uses, Benefits and Risks </Item.Header>
               <Item.Meta>Cannabidiol (CBD) oil is used for health benefits, but it is controversial.</Item.Meta>
               <Item.Description>
               Source: [Leafly]
