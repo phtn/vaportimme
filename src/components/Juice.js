@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, Menu, Segment, Icon, Image } from 'semantic-ui-react'
+import { Item, Menu, Segment, Icon, Image, Message } from 'semantic-ui-react'
 import Header from './Header'
 import Juices from '../static/juices'
 import Footer from './Footer'
@@ -48,6 +48,20 @@ export default props => (
           <Icon name='home' size='big' color='purple'/> 
         </Menu.Item>
       </Menu>
+
+      <Segment attached>
+      <Message
+        info
+        icon='info'
+        header='About our E-Liquid'
+        content='All our E-Liquid is made in house. Our Laboratory chemist only uses Vegetable Glycerine and food flavoring. Nicotine is added upon request. We pride ourselves in not adding propylene glucol or any chemicals to any of our juice.'
+      />
+      <Message
+        positive
+        header='We also take orders over the phone!'
+        content='Make sure to give us a ring at 215.693.1905.'
+      />
+      </Segment>
 
       <Segment attached>
       <Segment attached='top'>

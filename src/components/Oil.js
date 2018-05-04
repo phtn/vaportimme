@@ -80,7 +80,7 @@ export default props => (
           <Image src={Dropper} height={20} /> <p style={styles.valueLabel}>30 ml</p>
         </Menu.Item>
         <Menu.Item>
-          <Image src={Dropper} height={23} /> <p style={styles.valueLabel}>50 ml</p>
+          {/* <Image src={Dropper} height={23} /> <p style={styles.valueLabel}>50 ml</p> */}
         </Menu.Item>
         <Menu.Item>
           {/* <Image src={Dropper} height={30} /> 50 ml */}

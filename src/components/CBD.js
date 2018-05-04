@@ -94,14 +94,60 @@ export default props => (
 
         <Item>
           <Item.Content>
-            <Item.Header as='a'>Cure to various conditions</Item.Header>
+            <Item.Header as='a'>Helps alleviate various conditions</Item.Header>
             <Item.Description>
-            <Segment>
-              <Menu stackable>
+              <Menu vertical stackable >
                 <Menu.Item>Acne</Menu.Item>
                 <Menu.Item>ADD & ADHD</Menu.Item>
+                <Menu.Item>Addiction</Menu.Item>
+                <Menu.Item>AIDS</Menu.Item>
+                <Menu.Item>ALS</Menu.Item>
+                <Menu.Item>Alzheimer's Disease</Menu.Item>
+                <Menu.Item>Anorexia</Menu.Item>
+                <Menu.Item>Antibiotic Resistance</Menu.Item>
+                <Menu.Item>Anxiety</Menu.Item>
+                <Menu.Item>Atherosclerosis</Menu.Item>
+                <Menu.Item>Arthritis</Menu.Item>
+                <Menu.Item>Asthma</Menu.Item>
+                <Menu.Item>Autism</Menu.Item>
+                <Menu.Item>Bipolar Disorder</Menu.Item>
+                <Menu.Item>Cancer</Menu.Item>
+                <Menu.Item>Colitis and Crohn's</Menu.Item>
+                <Menu.Item>Depression</Menu.Item>
+                <Menu.Item>Diabetes</Menu.Item>
+                <Menu.Item>Endocrine Disorders</Menu.Item>
+                <Menu.Item>Epilepsy and Seizures</Menu.Item>
+                <Menu.Item>Fibromyalgia</Menu.Item>
+                <Menu.Item>Glaucoma</Menu.Item>
+                <Menu.Item>Heart Disease</Menu.Item>
+                <Menu.Item>Huntington's Disease</Menu.Item>
+                <Menu.Item>Inflammation</Menu.Item>
+                <Menu.Item>Irritable Bowel Syndrome</Menu.Item>
+                <Menu.Item>Kidney Disease</Menu.Item>
+                <Menu.Item>Liver Disease</Menu.Item>
+                <Menu.Item>Metabolic Syndrome</Menu.Item>
+                <Menu.Item>Migrane</Menu.Item>
+                <Menu.Item>Mood Disorder</Menu.Item>
+                <Menu.Item>Motion Sickness</Menu.Item>
+                <Menu.Item>Multiple Sclerosis (MS)</Menu.Item>
+                <Menu.Item>Nausea</Menu.Item>
+                <Menu.Item>Neurodegeneration</Menu.Item>
+                <Menu.Item>Neuropathic Pain</Menu.Item>
+                <Menu.Item>Obesity</Menu.Item>
+                <Menu.Item>OCD</Menu.Item>
+                <Menu.Item>Osteoporosis</Menu.Item>
+                <Menu.Item>Parkinson's Disease</Menu.Item>
+                <Menu.Item>Prion/Mad Cow Disease</Menu.Item>
+                <Menu.Item>PTSD</Menu.Item>
+                <Menu.Item>Rheumatism</Menu.Item>
+                <Menu.Item>Schizophrenia</Menu.Item>
+                <Menu.Item>Sickle Cell Anemia</Menu.Item>
+                <Menu.Item>Skin Conditions</Menu.Item>
+                <Menu.Item>Sleep Disorders</Menu.Item>
+                <Menu.Item>Spinal Cord Injury</Menu.Item>
+                <Menu.Item>Stress</Menu.Item>
+                <Menu.Item>Stroke and TBI</Menu.Item>
               </Menu>
-            </Segment>
             </Item.Description>
           </Item.Content>
         </Item>

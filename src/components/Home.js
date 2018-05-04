@@ -8,7 +8,7 @@ import Wheel from '../assets/cbd_wheel.jpg'
 import Vaping from '../assets/resized/vaping_medium.jpg'
 import Video from './Video'
 import Human from '../assets/human.svg'
-import { Grid, Card, Image, Segment, Item, Divider } from 'semantic-ui-react'
+import { Grid, Card, Image, Segment, Item, Divider, Message } from 'semantic-ui-react'
 // const settings = {
 //   dots: false,
 //   infinite: true,
@@ -87,10 +87,20 @@ export default props => (
 
         
 
-
       
 
     <div style={styles.jumbotron}>
+
+      <Segment style={styles.segment} className='animated slideInLeft'>
+        <Message
+          warning
+          icon='warning sign'
+          header='WARNING'
+          content='This product may contain nicotine. Nicotine is an addictive chemical.'
+        />
+      </Segment>
+      
+
       <Segment style={styles.segment} className='animated fadeInUp blogsegment'>
         <Item.Group divided>
   
