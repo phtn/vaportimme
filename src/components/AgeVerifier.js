@@ -40,8 +40,8 @@ export default props => (
         <Label 
           color='purple'
           className='animated fadeInUp warning'>
-          <Icon name='warning'/>
-          Warning: You must be 18 years old or over to enter this site.
+          
+          Warning: You must be 18 years old or over to enter this site <Icon name='warning'/>
         </Label>
       </Grid.Row>
     </Grid>

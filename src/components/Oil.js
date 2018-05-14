@@ -63,7 +63,7 @@ export default props => (
       <Segment attached style={styles.jumbotron}>
         <Image src={Droplet} alt='' size='small' className='animated slideInDown' style={styles.droplet}/>
         <h1 style={styles.title} className='animated slideInUp'>CBD Oil (Cannabidiol)</h1>
-        <h3 style={styles.subtitle} className='animated slideInUp'>Now Available!</h3>
+        <h2 style={styles.subtitle} className='animated slideInUp'>Now Available!</h2>
         <Image src={CBD} alt='' size='big' className='animated fadeInUp' style={styles.droplet}/>
       </Segment>
 
@@ -80,10 +80,10 @@ export default props => (
           <Image src={Dropper} height={20} /> <p style={styles.valueLabel}>30 ml</p>
         </Menu.Item>
         <Menu.Item>
-          {/* <Image src={Dropper} height={23} /> <p style={styles.valueLabel}>50 ml</p> */}
+          <Image src={Dropper} height={20} /> <p style={styles.valueLabel}>30 ml</p>
         </Menu.Item>
         <Menu.Item>
-          {/* <Image src={Dropper} height={30} /> 50 ml */}
+          <Image src={Dropper} height={20} /> <p style={styles.valueLabel}>30 ml</p>
         </Menu.Item>
       </Menu>
 

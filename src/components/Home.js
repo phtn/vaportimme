@@ -98,14 +98,7 @@ export default props => (
 
     <div style={styles.jumbotron}>
 
-      <Segment style={styles.segment} className='animated slideInLeft'>
-        <Message
-          warning
-          icon='warning sign'
-          header='FDA WARNING'
-          content='This product may contain nicotine. Nicotine is an addictive chemical.'
-        />
-      </Segment>
+        
       
 
       <Segment style={styles.segment} className='animated fadeInUp blogsegment'>
@@ -162,11 +155,17 @@ export default props => (
               </Item.Extra>
             </Item.Content>
           </Item>
-
+          {/* https://www.youtube.com/watch?v=Fh-s64RNtz0 */}
+          {/* https://www.youtube.com/watch?v=U71YItZTie8 */}
+          {/* // 'https://www.youtube.com/embed/3bZb10ZxpBk/?autoplay=0&rel=0&modestbranding=1' */}
           <Item>
-            <Video url='https://www.youtube.com/embed/3bZb10ZxpBk/?autoplay=0&rel=0&modestbranding=1' title='youtube'/>
+            <Video url='https://www.youtube.com/embed/Fh-s64RNtz0/?autoplay=0&rel=0&modestbranding=1' title='youtube1'/>
+          </Item>
+          <Item>
+            <Video url='https://www.youtube.com/embed/U71YItZTie8/?autoplay=0&rel=0&modestbranding=1' title='youtube1'/>
           </Item>
           
+          {/* vapesocietysupplies.com */}
   
         </Item.Group>
       </Segment>

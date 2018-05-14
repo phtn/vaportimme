@@ -22,7 +22,7 @@ export default props => (
     <header className="App-header">
       <img src={logo} className="App-logo fadeInDown animated" alt="logo" />
       <a href='tel:215-693-1905'><p style={styles.phone}>T 215.693.1905</p></a>
-      <h1 style={styles.header}>New Hope's Best Custom E-Cigarettte Store</h1>
+      <h1 style={styles.header}>New Hope's Preferred Custom E-Cigarette Store</h1>
     </header>
   </div>
 )

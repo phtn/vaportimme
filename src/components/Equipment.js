@@ -63,8 +63,11 @@ export default props => (
         <Menu.Item></Menu.Item>
       </Menu>
       <Segment attached >
-        <h2>Get Your Complete Set Now!</h2>
-            
+        {/* <h2>Get Your Complete Set Now!</h2> */}
+        {/* smok, cloudtank, sigelei, sourin, Istick */}
+        {/* react slick  */}
+        {/* our hardware selection is updated on a weekly basis */}
+        {/* call us */}
         <Menu stackable widths='2'>
             <Menu.Item>
                 <Image size='tiny' src={EleafLogo}/>
@@ -73,13 +76,18 @@ export default props => (
                 <Image size='tiny' src={AspireLogo}/>
             </Menu.Item>
         </Menu>
-        <h3>
-            Accessories
-        </h3>
+        
         <Divider/>
+        <p>Accessories</p>
         <p>Chargers</p>
+        <p>kits</p>
         <p>Batteries</p>
         <p>Drip tips</p>
+        <p>RDA</p>
+        <p>RBA</p>
+        <p>Mods</p>
+        <p>Kanthal</p>
+        <p>Cotton</p>
         <p>Replacements glass</p>
         <Divider/>
       </Segment>

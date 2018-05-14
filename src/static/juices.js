@@ -135,8 +135,8 @@ const juices = [
     },
     {
       childKey: 21,
-      header: 'Missing Flavor',
-      description: 'Fresh Berries.',
+      header: 'Mango Berry',
+      description: 'Sweet Mango & Fresh Berries.',
       extra: <Rating icon='star' defaultRating={3} maxRating={5} />,
     },
     {

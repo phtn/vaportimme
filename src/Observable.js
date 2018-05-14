@@ -7,6 +7,7 @@ import Oil from './components/Oil'
 import Store from './components/Store'
 import Equip from './components/Equipment'
 import CBD from './components/CBD'
+import Privacy from './components/Privacy'
 class RouteObservable {
   constructor(){
     extendObservable(this, {
@@ -44,8 +45,17 @@ class RouteObservable {
             cbd={()=> {
               this.component='cbd'
               this.setLocal('cbd')
-            }}/>
+            }}
+            privacy={()=> {
+              this.component='privacy'
+              this.setLocal('privacy')
+            }}
+            />
           case 'juice': return <Juice back={()=> {
+            this.component = 'home'
+            this.setLocal('home')
+          }}/>
+          case 'privacy': return <Privacy back={()=> {
             this.component = 'home'
             this.setLocal('home')
           }}/>

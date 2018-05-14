@@ -6,6 +6,7 @@ import Instagram from '../assets/instagram.svg'
 import Phone from '../assets/phone.svg'
 import Pin from '../assets/pin.svg'
 
+
 const styles = {
   container: {
     backgroundColor: '#222',
@@ -85,7 +86,7 @@ export default props => (
     </Grid>
     <Divider section/>
     <span style={styles.usageLinks}>Terms of Use</span> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-    <span style={styles.usageLinks}>Privacy Policy</span><br/>
+    <span style={styles.usageLinks} onClick={()=> localStorage.setItem('component','privacy')}>Privacy Policy</span><br/>
     <span style={styles.bottomText} >Vaportimme New Hope &copy; 2018</span>
   </div>
 )

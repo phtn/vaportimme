@@ -39,10 +39,18 @@ export default props => (
     <Header />
     
     <div style={styles.segment}>
-      <Menu attached='top' >
+      <Menu attached='top' widths={3} borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
           <Icon name='eyedropper' size='large' color='grey'/> 
           <p style={styles.title}>JUICE</p>
+        </Menu.Item>
+        <Menu.Item>
+          <Message
+            warning
+            icon='warning sign'
+            header='WARNING'
+            content='This product contains nicotine. Nicotine is an addictive chemical.'
+          />
         </Menu.Item>
         <Menu.Item color='teal' onClick={props.back} position='right'>
           <Icon name='home' size='big' color='purple'/> 
@@ -54,11 +62,11 @@ export default props => (
         info
         icon='info'
         header='About our E-Liquid'
-        content='All our E-Liquid is made in house. Our Laboratory chemist only uses Vegetable Glycerine and food flavoring. Nicotine is added upon request. We pride ourselves in not adding propylene glucol or any chemicals to any of our juice.'
+        content='All our E-Liquid is made in house. Our Laboratory chemist only uses Vegetable Glycerine and food flavoring. Nicotine is added upon request. We pride ourselves in not adding propylene glycol or any chemicals to any of our juice.'
       />
       <Message
         positive
-        header='We also take orders over the phone!'
+        header='We take orders over the phone! Open 7 days a week.'
         content='Make sure to give us a ring at 215.693.1905.'
       />
       </Segment>
