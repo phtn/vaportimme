@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Menu, Icon, Segment, Image, Divider, Card, Item, Button } from 'semantic-ui-react'
+import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
 import Equip1 from '../assets/resized/equip_medium.jpg'

@@ -6,9 +6,11 @@ import CBD from '../assets/resized/cbd_medium.jpg'
 import Equip from '../assets/resized/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
 import Vaping from '../assets/resized/vaping_medium.jpg'
+import NoSmoking from '../assets/nosmoking.svg'
 import Video from './Video'
-import Human from '../assets/human.svg'
-import { Grid, Card, Image, Segment, Item, Divider, Message } from 'semantic-ui-react'
+// import Benefits from './Benefits'
+
+import { Grid, Card, Image, Segment, Item, Message, Accordion, Icon, Menu } from 'semantic-ui-react'
 // const settings = {
 //   dots: false,
 //   infinite: true,
@@ -37,6 +39,11 @@ const styles = {
     position: 'absolute',
     top: 45,
     left: window.innerWidth/5
+  },
+  itemHead: {
+    color: 'purple',
+    fontWeight: 'bolder',
+    marginRight: 10
   }
 }
 
@@ -95,7 +102,7 @@ export default props => (
         <Message
           warning
           icon='warning sign'
-          header='WARNING'
+          header='FDA WARNING'
           content='This product may contain nicotine. Nicotine is an addictive chemical.'
         />
       </Segment>
@@ -117,7 +124,7 @@ export default props => (
           </Item>
 
           <Item>
-          <Item.Image size='small' src={Vaping} />
+            <Item.Image size='small' src={Vaping} />
             <Item.Content>
               <Item.Header as='a'>Scientists are shocked after testing E-cig Vapor in the Lab</Item.Header>
               <Item.Meta>Source: [ChurnMag.com].</Item.Meta>
@@ -128,17 +135,37 @@ export default props => (
           </Item>
 
           <Item>
-            <Video/>
+            <Item.Image size='small' src={NoSmoking} />
+            <Item.Content>
+              <Item.Header as='a'>Benefits of NOT Smoking Cigarettes!</Item.Header>
+              <Item.Meta></Item.Meta>
+              <Item.Description>
+              </Item.Description>
+              <Item.Extra>
+
+                <Accordion>
+                  <Accordion.Title active={true} index={0} onClick={this.handleClick}>
+                    <Icon name='dropdown' />
+                    Every Cigarette you <strong>DON'T SMOKE</strong> is doing you <strong>GOOD!</strong>
+                  </Accordion.Title>
+                  <Accordion.Content active={true}>
+                    <Menu vertical fluid>
+                      <Menu.Item><span style={styles.itemHead}>in 8 hours</span> Excess carbon monoxide is out of your blood.</Menu.Item>
+                      <Menu.Item><span style={styles.itemHead}>in 5 days</span> You'll feel better from drinking more water and less flavored drinks.</Menu.Item>
+                      <Menu.Item><span style={styles.itemHead}>in 1 week</span> Your sense of taste and smell improves.</Menu.Item>
+                      <Menu.Item><span style={styles.itemHead}>in 12 weeks</span> Your lungs regain the ability to clean themselves.</Menu.Item>
+                      <Menu.Item><span style={styles.itemHead}>in 1 year</span> A pack-a-day smoker will save you $4,000 and risk of heart disease has halved.</Menu.Item>
+                      <Menu.Item><span style={styles.itemHead}>in 5 years</span> Your risk of stroke has dramatically decreased and the overall improvement of quality of life is felt.</Menu.Item>
+                    </Menu>
+                  </Accordion.Content>
+                </Accordion>
+              </Item.Extra>
+            </Item.Content>
           </Item>
-          {/* <Divider/> */}
-          <Segment >
-          {/* <Item >
-            <h1 style={styles.humanTitle}>Benefits of Vaping</h1>
-            <p style={styles.humanSubtitle}>vs Cigarette Smoking</p>
-            <p style={styles.humanSubtext}>Human Subtext</p>
-            <Image src={Human} alt='' centered  rounded/>
-          </Item> */}
-          </Segment>
+
+          <Item>
+            <Video url='https://www.youtube.com/embed/3bZb10ZxpBk/?autoplay=0&rel=0&modestbranding=1' title='youtube'/>
+          </Item>
           
   
         </Item.Group>

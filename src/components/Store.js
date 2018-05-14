@@ -2,10 +2,10 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
-
+import Video from './Video'
 // import LiveCamera from './LiveCamera'
 import Store1 from '../assets/store1.jpg'
-import Store2 from '../assets/store2.jpg'
+// import Store2 from '../assets/store2.jpg'
 import Store3 from '../assets/store3.jpg'
 import Store4 from '../assets/store4.jpg'
 const styles={
@@ -63,8 +63,8 @@ export default props => (
         </Card>
       </Segment>
       <Segment attached textAlign='center'>
-        Live Video Feed Here
-        <Icon name='play' size='massive' color='grey'/>
+        <Video url='https://gaming.youtube.com/embed/live_stream?channel=UCpUl_Mm277YgWv2wFvObFPw' title='livecam'/>
+        {/* <Icon name='play' size='massive' color='grey'/> */}
       </Segment>
       <Segment attached textAlign='center'>
         <Button primary as='a' href="https://maps.google.com/?q=15+W+Ferry+St+New+Hope+PA+18938"><Icon name='map' />Get Directions</Button>
