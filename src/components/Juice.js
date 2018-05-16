@@ -39,25 +39,24 @@ export default props => (
     <Header />
     
     <div style={styles.segment}>
-      <Menu attached='top' widths={3} borderless>
+      <Menu attached='top' widths={2} borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
           <Icon name='eyedropper' size='large' color='grey'/> 
           <p style={styles.title}>JUICE</p>
         </Menu.Item>
-        <Menu.Item>
-          <Message
-            warning
-            icon='warning sign'
-            header='WARNING'
-            content='This product contains nicotine. Nicotine is an addictive chemical.'
-          />
-        </Menu.Item>
+        
         <Menu.Item color='teal' onClick={props.back} position='right'>
           <Icon name='home' size='big' color='purple'/> 
         </Menu.Item>
       </Menu>
 
       <Segment attached>
+      <Message
+            warning
+            icon='warning sign'
+            header='WARNING'
+            content='This product contains nicotine. Nicotine is an addictive chemical.'
+          />
       <Message
         info
         icon='info'
