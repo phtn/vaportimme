@@ -10,7 +10,7 @@ import NoSmoking from '../assets/nosmoking.svg'
 import Video from './Video'
 // import Benefits from './Benefits'
 
-import { Grid, Card, Image, Segment, Item, Message, Accordion, Icon, Menu } from 'semantic-ui-react'
+import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button } from 'semantic-ui-react'
 // const settings = {
 //   dots: false,
 //   infinite: true,
@@ -98,11 +98,30 @@ export default props => (
 
     <div style={styles.jumbotron}>
 
-        
-      
+      <div 
+        className='animated fadeInUp cam'
+        style={{textAlign: 'center'}}
+      >
+        <Button positive onClick={props.store}>
+          <Icon name='video camera'/>
+          View Live Cam
+        </Button>
+      </div>
+      {/* <Message
+        positive
+        icon='video camera'
+        header='NEW HOPE LIVE CAM'
+        className='animated fadeRight'
+        style={{textAlign: 'center'}}
+      /> */}
 
       <Segment style={styles.segment} className='animated fadeInUp blogsegment'>
+        
+        
+        
         <Item.Group divided>
+
+          
   
           <Item>
           <Item.Image size='small' src={Wheel} />
@@ -162,7 +181,7 @@ export default props => (
             <Video url='https://www.youtube.com/embed/Fh-s64RNtz0/?autoplay=0&rel=0&modestbranding=1' title='youtube1'/>
           </Item>
           <Item>
-            <Video url='https://www.youtube.com/embed/U71YItZTie8/?autoplay=0&rel=0&modestbranding=1' title='youtube1'/>
+            <Video url='https://www.youtube.com/embed/U71YItZTie8/?autoplay=0&rel=0&modestbranding=1' title='youtube2'/>
           </Item>
           
           {/* vapesocietysupplies.com */}

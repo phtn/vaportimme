@@ -29,7 +29,7 @@ export default props => (
         <Image src={Logo} style={styles.logo} className='verifylogo animated fadeInDown logo'/>   
       </Grid.Row>
       <Grid.Row centered>
-        <h1 style={styles.header}>New Hope's Best Custom E-Cigarettte Store</h1>
+        <h1 style={styles.header}>New Hope's Preferred Custom E-Cigarettte Store</h1>
       </Grid.Row>
       <Grid.Row centered>
         <Button positive className='yup animated fadeInUp'  onClick={props.goHome}>I am 18 and over</Button>
