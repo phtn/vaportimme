@@ -29,7 +29,7 @@ class CBD extends Component {
         <Header/>
         
         <div style={styles.segment}>
-        <Menu attached='top' >
+        <Menu attached='top' borderless>
           <Menu.Item color='teal' onClick={this.props.juice} position='left'>
             <Icon name='theme' size='large' color='green'/> 
             <p style={styles.title}>WHAT IS CBD?</p>

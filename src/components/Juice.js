@@ -39,7 +39,7 @@ export default props => (
     <Header />
     
     <div style={styles.segment}>
-      <Menu attached='top' widths={2} borderless>
+      <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
           <Icon name='eyedropper' size='large' color='grey'/> 
           <p style={styles.title}>JUICE</p>

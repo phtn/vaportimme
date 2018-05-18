@@ -24,7 +24,7 @@ export default props => (
     <Header/>
     
     <div style={styles.segment}>
-    <Menu attached='top' >
+    <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
           <Icon name='map signs' size='large' color='grey'/> 
           <p style={styles.title}>STORE</p>

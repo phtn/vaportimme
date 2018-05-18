@@ -30,7 +30,7 @@ export default props => (
     <Header/>
     
     <div style={styles.segment}>
-    <Menu attached='top' >
+    <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
           <Image src={EquipIcon} height={30} style={styles.equipIcon} /> 
           <p style={styles.title}>EQUIPMENT</p>

@@ -50,7 +50,7 @@ export default props => (
     <Header />
     
     <div style={styles.segment}>
-    <Menu attached='top'>
+    <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.oil} position='left'>
           <Icon name='theme' size='large' color='grey'/> 
           <p style={styles.titleBar}>CBD OIL</p>
