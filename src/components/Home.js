@@ -10,6 +10,7 @@ import NoSmoking from '../assets/nosmoking.svg'
 // import Video from './Video'
 import Vid1 from '../assets/vid1.jpg'
 import Vid2 from '../assets/vid2.jpg'
+// import YouTubeSvg from '../assets/cctv.svg'
 
 // import Benefits from './Benefits'
 
@@ -181,8 +182,8 @@ export default props => (
           <Grid stackable>
           <Grid.Row columns={3}>
           <Grid.Column>
-          <Card as='a' href='https://www.youtube.com/watch?v=Fh-s64RNtz0' style={{maxHeight: 400}}>
-            <Image src={Vid1} />
+          <Card as='a' href='https://www.youtube.com/watch?v=Fh-s64RNtz0' fluid >
+            <Image src={Vid1} size='big'style={{maxHeight: 300}}/>
             <Card.Content>
               <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
               <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
@@ -198,11 +199,22 @@ export default props => (
           </Grid.Column>
 
           <Grid.Column>
-          <Card as='a' href='https://www.youtube.com/watch?v=U71YItZTie8'>
-            <Image src={Vid2} />
+          <Card as='a' href='https://www.youtube.com/watch?v=U71YItZTie8' fluid style={{maxHeight: 400}}>
+            <Image src={Vid2} style={{maxHeight: 400}}/>
             <Card.Content>
               <Card.Header>Benefits of CBD</Card.Header>
               <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
+            </Card.Content>
+          
+          </Card>
+          </Grid.Column>
+
+          <Grid.Column>
+          <Card as='a' href='https://gaming.youtube.com/watch?v=N7298pOTXjE' fluid >
+            {/* <Image src={YouTubeSvg} size='medium' style={{Height: 200}} fluid/> */}
+            <Card.Content>
+              <Card.Header>New Hope Live</Card.Header>
+              <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
             </Card.Content>
           
           </Card>
