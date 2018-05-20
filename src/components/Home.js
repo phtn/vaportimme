@@ -7,10 +7,13 @@ import Equip from '../assets/resized/equip_medium.jpg'
 import Wheel from '../assets/cbd_wheel.jpg'
 import Vaping from '../assets/resized/vaping_medium.jpg'
 import NoSmoking from '../assets/nosmoking.svg'
-import Video from './Video'
+// import Video from './Video'
+import Vid1 from '../assets/vid1.jpg'
+import Vid2 from '../assets/vid2.jpg'
+
 // import Benefits from './Benefits'
 
-import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button } from 'semantic-ui-react'
+import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button,} from 'semantic-ui-react'
 // const settings = {
 //   dots: false,
 //   infinite: true,
@@ -115,7 +118,7 @@ export default props => (
         style={{textAlign: 'center'}}
       /> */}
 
-      <Segment style={styles.segment} className='animated fadeInUp blogsegment'>
+      <Segment style={styles.segment} >
         
         
         
@@ -175,14 +178,54 @@ export default props => (
             </Item.Content>
           </Item>
           {/* https://www.youtube.com/watch?v=Fh-s64RNtz0 */}
+          <Grid stackable>
+          <Grid.Row columns={3}>
+          <Grid.Column>
+          <Card as='a' href='https://www.youtube.com/watch?v=Fh-s64RNtz0' style={{maxHeight: 400}}>
+            <Image src={Vid1} />
+            <Card.Content>
+              <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
+              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
+              {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+            </Card.Content>
+            {/* <Card.Content extra>
+              <a>
+                <Icon name='user' />
+                10 Friends
+              </a>
+            </Card.Content> */}
+          </Card>
+          </Grid.Column>
+
+          <Grid.Column>
+          <Card as='a' href='https://www.youtube.com/watch?v=U71YItZTie8'>
+            <Image src={Vid2} />
+            <Card.Content>
+              <Card.Header>Benefits of CBD</Card.Header>
+              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
+            </Card.Content>
+          
+          </Card>
+          </Grid.Column>
+          </Grid.Row>
+          </Grid>
+
+          
+          {/* <Image primary fluid as='a' href='https://www.youtube.com/watch?v=Fh-s64RNtz0' src={Vid1}/>
+            Doctors Speak Out on the Benefits of CBD
+          <Divider/>
+          <Button primary fluid as='a' href='https://www.youtube.com/embed/Fh-s64RNtz0'>
+            Benefits of CBD
+          </Button> */}
           {/* https://www.youtube.com/watch?v=U71YItZTie8 */}
           {/* // 'https://www.youtube.com/embed/3bZb10ZxpBk/?autoplay=0&rel=0&modestbranding=1' */}
-          <Item>
-            <Video url='https://www.youtube.com/embed/Fh-s64RNtz0/?autoplay=0&rel=0&modestbranding=1' title='youtube1'/>
+          {/* <Item>
+            <Video url='https://www.youtube.com/embed/Fh-s64RNtz0' title='Fh-s64RNtz0'/>
           </Item>
+          CBD Benefits
           <Item>
-            <Video url='https://www.youtube.com/embed/U71YItZTie8/?autoplay=0&rel=0&modestbranding=1' title='youtube2'/>
-          </Item>
+            <Video url='https://www.youtube.com/embed/U71YItZTie8' title='U71YItZTie8'/>
+          </Item> */}
           
           {/* vapesocietysupplies.com */}
   
