@@ -122,6 +122,7 @@ export default props => (
       </Segment>
 
       <Segment attached='bottom'>
+        <h1 style={{fontFamily: 'Roboto, sans-serif', fontWeight: 100, color: 'purple'}}>Juice Flavors</h1>
         <Item.Group items={Juices} divided className='animated fadeInUp'/>
       </Segment>
       

@@ -1,6 +1,9 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
@@ -8,8 +11,24 @@ import Equip1 from '../assets/resized/equip_medium.jpg'
 import Equip2 from '../assets/resized/equip_front.jpg'
 import EleafLogo from '../assets/eleaflogo.png'
 import AspireLogo from '../assets/aspirelogo.png'
+import Smok from '../assets/smok.svg'
+import Sigelei from '../assets/sigelei.png'
+import Sourin from '../assets/sourin.png'
+
+
 
 import EquipIcon from '../assets/equipment.svg'
+
+const settings = {
+  dots: false,
+  infinite: true,
+  arrows: false,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  // centerMode: true
+}
 
 const styles={
   segment: {
@@ -59,28 +78,55 @@ export default props => (
 
 
       </Segment>
-      <Menu attached width='4'>
+      {/* <Menu attached width='4'>
         <Menu.Item></Menu.Item>
-      </Menu>
+      </Menu> */}
       <Segment attached >
         {/* <h2>Get Your Complete Set Now!</h2> */}
         {/* smok, cloudtank, sigelei, sourin, Istick */}
         {/* react slick  */}
         {/* our hardware selection is updated on a weekly basis */}
         {/* call us */}
-        <Menu stackable widths='2'>
+        <Slider {...settings} >
+          <div >
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
+              <Image size='small' src={EleafLogo} />
+            </div>
+          </div>
+          <div >
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
+              <Image size='small' src={AspireLogo} />
+            </div>
+          </div>
+          <div >
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
+              <Image size='small' src={Smok} />
+            </div>
+          </div>
+          <div >
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
+              <Image size='small' src={Sigelei} />
+            </div>
+          </div>
+          <div >
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
+              <Image size='small' src={Sourin} />
+            </div>
+          </div>
+        </Slider>
+        {/* <Menu stackable widths='2'>
             <Menu.Item>
-                <Image size='tiny' src={EleafLogo}/>
+                
             </Menu.Item>
             <Menu.Item>
-                <Image size='tiny' src={AspireLogo}/>
+                
             </Menu.Item>
-        </Menu>
+        </Menu> */}
         
         <Divider/>
         <p>Accessories</p>
         <p>Chargers</p>
-        <p>kits</p>
+        <p>Kits</p>
         <p>Batteries</p>
         <p>Drip tips</p>
         <p>RDA</p>
