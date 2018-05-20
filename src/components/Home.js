@@ -186,8 +186,8 @@ export default props => (
             {/* <Image src={Vid1} size='big'style={{maxHeight: 300}}/> */}
             <Card.Content>
               <Video url={'https://www.youtube.com/embed/Fh-s64RNtz0'}/>
-              {/* <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
-              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta> */}
+              <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
+              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
               {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
             </Card.Content>
             {/* <Card.Content extra>
@@ -204,8 +204,8 @@ export default props => (
             {/* <Image src={Vid2} style={{maxHeight: 400}}/> */}
             <Card.Content>
             <Video url={'https://www.youtube.com/embed/U71YItZTie8'}/>
-              {/* <Card.Header>Benefits of CBD</Card.Header>
-              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta> */}
+              <Card.Header>Benefits of CBD</Card.Header>
+              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
             </Card.Content>
           
           </Card>
@@ -214,10 +214,11 @@ export default props => (
           <Grid.Column>
           <Card fluid >
             {/* <Image src={YouTubeSvg} size='medium' style={{Height: 200}} fluid/> */}
-            <Video url={'https://www.youtube.com/embed/N7298pOTXjE'}/>
+            
             <Card.Content>
-              {/* <Card.Header>New Hope Live</Card.Header>
-              <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta> */}
+            <Video url={'https://www.youtube.com/embed/N7298pOTXjE'}/>
+              <Card.Header>New Hope Live</Card.Header>
+              <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
             </Card.Content>
           
           </Card>

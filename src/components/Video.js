@@ -6,7 +6,7 @@ class Video extends Component {
   render(){
     return (
       // <iframe src={this.props.url} width='100%' height={400} title={this.props.title}></iframe>
-      <iframe width="100%" height="auto" src={this.props.url} frameBorder="0" allow="autoplay; encrypted-media" title='video' allowFullScreen></iframe>
+      <iframe style={{marginBottom: 20}} width="100%" height="auto" src={this.props.url} frameBorder="0" allow="autoplay; encrypted-media" title='video' allowFullScreen></iframe>
       //
 
     )
