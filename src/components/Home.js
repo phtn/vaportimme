@@ -216,7 +216,7 @@ export default props => (
             {/* <Image src={YouTubeSvg} size='medium' style={{Height: 200}} fluid/> */}
             
             <Card.Content>
-            <Video url={'https://www.youtube.com/embed/N7298pOTXjE'}/>
+            <Video url={'https://youtube.com/embed/live_stream?channel=UCpUl_Mm277YgWv2wFvObFPw'}/>
               <Card.Header>New Hope Live</Card.Header>
               <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
             </Card.Content>
