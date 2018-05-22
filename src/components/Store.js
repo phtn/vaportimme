@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
-import Video from './Video'
+// import Video from './Video'
 // import LiveCamera from './LiveCamera'
 import Store1 from '../assets/store1.jpg'
 // import Store2 from '../assets/store2.jpg'
@@ -62,10 +62,17 @@ export default props => (
           </Card.Content>
         </Card>
       </Segment>
+{/*       
       <Segment attached textAlign='center'>
-        <Video url='https://gaming.youtube.com/embed/live_stream?channel=UCpUl_Mm277YgWv2wFvObFPw' title='livecam'/>
-        {/* <Icon name='play' size='massive' color='grey'/> */}
-      </Segment>
+      <Card fluid >
+        <Card.Content>
+          <Video url={'https://youtube.com/embed/live_stream?channel=UCpUl_Mm277YgWv2wFvObFPw'} />
+          <Card.Header>New Hope Live</Card.Header>
+          <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
+        </Card.Content>
+      </Card>
+      </Segment> */}
+   
       <Segment attached textAlign='center'>
         <Button primary as='a' href="https://maps.google.com/?q=15+W+Ferry+St+New+Hope+PA+18938"><Icon name='map' />Get Directions</Button>
       </Segment>

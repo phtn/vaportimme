@@ -104,21 +104,15 @@ export default props => (
 
       <div 
         className='animated fadeInUp cam'
-        style={{textAlign: 'center'}}
-      >
-        <Button positive onClick={props.store}>
+        style={{textAlign: 'center'}}>
+
+        <Button positive onClick={()=> window.scrollTo(0,800)}>
           <Icon name='video camera'/>
           View Live Cam
         </Button>
+      
       </div>
-      {/* <Message
-        positive
-        icon='video camera'
-        header='NEW HOPE LIVE CAM'
-        className='animated fadeRight'
-        style={{textAlign: 'center'}}
-      /> */}
-
+      
       <Segment style={styles.segment} >
         
         
