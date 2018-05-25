@@ -14,7 +14,8 @@ const styles = {
   title: {
     fontSize: 18,
     color: 'purple',
-    fontWeight: 'bolder'
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: 500,
   },
   segment: {
     margin: 10,

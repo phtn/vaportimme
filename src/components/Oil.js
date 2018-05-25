@@ -29,7 +29,8 @@ const styles = {
   titleBar: {
     fontSize: 18,
     color: 'purple',
-    fontWeight: 'bolder'
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: 500,
   },
   subtitle: {
     fontWeight: 400,
