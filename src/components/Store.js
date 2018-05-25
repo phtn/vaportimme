@@ -35,7 +35,7 @@ class StorePage extends React.Component {
   getWeather(){
     const APPID = '19087ff6101a2f698425053f2fa21143'
     const CITY = '5203197'
-    const URL = `http://api.openweathermap.org/data/2.5/weather?id=${CITY}&APPID=${APPID}`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?id=${CITY}&APPID=${APPID}`
 
     fetch(URL)
       .then(response => response.json())
@@ -47,8 +47,6 @@ class StorePage extends React.Component {
         // console.log(data.main.temp, data.weather[0].description)
         console.log(this.state.temperature, this.state.weatherDesc)
       })
-      
-
   }
 
   render(){
