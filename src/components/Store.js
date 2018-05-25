@@ -69,7 +69,7 @@ class StorePage extends React.Component {
             
             <h2 style={{color: '#333', fontFamily: 'Raleway, sans-serif', fontWeight: 400}}>Vaportimme New Hope </h2>
             <Icon name='map pin' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>15 W Ferry Street New Hope PA, 18938</span><br/>
-            <Icon name='call' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>215 693 1905</span>
+            <Icon name='call' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>215 693 1905</span><br/>
             <Icon name='mail' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>vaportimme@gmail.com</span>
             <Headr as='h1' style={{color: 'purple', fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: 26}}>{this.state.temperature}&deg;F<span style={{marginLeft: 20,fontSize: 14, fontWeight: 500, marginTop: '-20px'}}>{this.state.weatherDesc}</span></Headr>
             <Divider/>
