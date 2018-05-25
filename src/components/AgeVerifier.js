@@ -26,7 +26,7 @@ export default props => (
     
     <Grid padded>
       <Grid.Row centered>
-        <Image src={Logo} style={styles.logo} className='verifylogo animated fadeInDown logo'/>   
+        <Image src={Logo} style={styles.logo} className='verifylogo animated fadeInDown logo' alt='logo'/>   
       </Grid.Row>
       <Grid.Row centered>
         <h1 style={styles.header}>New Hope's Preferred Custom E-Cigarettte Store</h1>

@@ -45,7 +45,7 @@ class StorePage extends React.Component {
         let weatherDesc = data.weather[0].description.toUpperCase()
         this.setState({temperature, weatherDesc})
         // console.log(data.main.temp, data.weather[0].description)
-        console.log(this.state.temperature, this.state.weatherDesc)
+        // console.log(this.state.temperature, this.state.weatherDesc)
       })
   }
 

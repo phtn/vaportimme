@@ -106,7 +106,16 @@ export default props => (
         className='animated fadeInUp cam'
         style={{textAlign: 'center'}}>
 
-        <Button positive onClick={()=> window.scrollTo(0,800)}>
+        <Button positive onClick={()=> {
+          if (window.innerWidth < 600){
+            window.scrollTo(0,1800)
+            console.log(600)
+          } else {
+            console.log(800)
+            window.scrollTo(0,800)
+          }
+          
+        }}>
           <Icon name='video camera'/>
           View Live Cam
         </Button>
