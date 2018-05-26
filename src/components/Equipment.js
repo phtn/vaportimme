@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
-import Equip1 from '../assets/resized/equip_medium.jpg'
-import Equip2 from '../assets/resized/equip_front.jpg'
+import Equip1 from '../assets/webp/equip_medium.webp'
+import Equip2 from '../assets/webp/equip_front.webp'
 import EleafLogo from '../assets/eleaflogo.png'
 import AspireLogo from '../assets/aspirelogo.png'
 import Smok from '../assets/smok.svg'
@@ -52,7 +52,7 @@ export default props => (
     <div style={styles.segment}>
     <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
-          <Image src={EquipIcon} height={30} style={styles.equipIcon} /> 
+          <Image className='lazy' src={EquipIcon} height={30} style={styles.equipIcon} /> 
           <p style={styles.title}>EQUIPMENT</p>
         </Menu.Item>
         <Menu.Item color='teal' onClick={props.back} position='right'>
@@ -65,7 +65,7 @@ export default props => (
        
         <Card raised fluid>
           <Card.Content  textAlign='center'>
-            <Image src={Equip1} alt=''/>
+            <Image className='lazy' src={Equip1} alt=''/>
           </Card.Content>
         </Card>
 
@@ -73,7 +73,7 @@ export default props => (
 
         <Card raised fluid>
           <Card.Content textAlign='center'>
-            <Image src={Equip2} alt=''/> 
+            <Image className='lazy' src={Equip2} alt=''/> 
           </Card.Content>
         </Card>
 
@@ -91,27 +91,27 @@ export default props => (
         <Slider {...settings} >
           <div >
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
-              <Image size='small' src={EleafLogo} />
+              <Image className='lazy' size='small' src={EleafLogo} />
             </div>
           </div>
           <div >
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
-              <Image size='small' src={AspireLogo} />
+              <Image className='lazy' size='small' src={AspireLogo} />
             </div>
           </div>
           <div >
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
-              <Image size='small' src={Smok} />
+              <Image className='lazy' size='small' src={Smok} />
             </div>
           </div>
           <div >
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
-              <Image size='small' src={Sigelei} />
+              <Image className='lazy' size='small' src={Sigelei} />
             </div>
           </div>
           <div >
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: '0px solid red', textAlign: 'center', padding: 100}}>
-              <Image size='small' src={Sourin} />
+              <Image className='lazy' size='small' src={Sourin} />
             </div>
           </div>
         </Slider>

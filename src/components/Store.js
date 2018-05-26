@@ -4,10 +4,10 @@ import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button, Header as Headr } from 'semantic-ui-react'
 // import Video from './Video'
 // import LiveCamera from './LiveCamera'
-import Store1 from '../assets/store1.jpg'
+import Store1 from '../assets/webp/store_lawn.webp'
 // import Store2 from '../assets/store2.jpg'
-import Store3 from '../assets/store3.jpg'
-import Store4 from '../assets/store4.jpg'
+import Store3 from '../assets/webp/store_front.webp'
+import Store4 from '../assets/webp/store_sign.webp'
 const styles={
   segment: {
     margin: 10
@@ -78,14 +78,14 @@ class StorePage extends React.Component {
           <Segment attached >
             <Card raised fluid>
               <Card.Content textAlign='center'>
-                <Image src={Store3} alt=''/>
+                <Image className='lazy' src={Store3} alt=''/>
               </Card.Content>
 
               
             </Card>
             <Card raised fluid>
               <Card.Content textAlign='center'>
-                <Image src={Store1} alt=''/> 
+                <Image className='lazy' src={Store1} alt=''/> 
               </Card.Content>
             </Card>
 
@@ -93,7 +93,7 @@ class StorePage extends React.Component {
               
 
               <Card.Content textAlign='center'>
-                <Image src={Store4} alt=''/> 
+                <Image className='lazy' src={Store4} alt=''/> 
               </Card.Content>
             </Card>
           </Segment>
