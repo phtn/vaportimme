@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 
 // import LiveCamera from './LiveCamera'
-import Equip1 from '../assets/webp/equip_medium.webp'
-import Equip2 from '../assets/webp/equip_front.webp'
+import Equip1 from '../assets/web/equip_medium.jpg'
+import Equip2 from '../assets/web/equip_front.jpg'
 import EleafLogo from '../assets/eleaflogo.png'
 import AspireLogo from '../assets/aspirelogo.png'
 import Smok from '../assets/smok.svg'

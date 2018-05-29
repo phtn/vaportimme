@@ -31,14 +31,16 @@ const styles = {
   menuItem: {
     color: '#ccc',
     lineHeight: 2,
-    fontSize: '12px'
+    fontSize: '16px'
   },
   bottomText: {
-    lineHeight: 3
+    lineHeight: 3,
+    fontSize: '16px'
   },
   usageLinks: {
     fontWeight: 400,
-    cursor: 'pointer'
+    fontSize: '16px',
+    cursor: 'pointer',
   },
   icons: {
       height: 20,
@@ -148,7 +150,7 @@ class Footer extends Component {
           
 
             <Header>EMAIL INFORMATION</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 Please do not provide sensitive personal information to us by e-mail. Instead, use our web forms, 
                 which employ SSL technology. If you choose to correspond with us via email, we will retain the 
@@ -163,7 +165,7 @@ class Footer extends Component {
 
             <Divider/>
             <Header>VISITOR INFORMATION</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 We implement a variety of security measures to maintain the safety of your personal information. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. When you visit our website, we offer the use of a secure server. All sensitive information you supply is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our databases to be only accessed as stated above.
               `}
@@ -171,7 +173,7 @@ class Footer extends Component {
 
             <Divider/>
             <Header>WEBSITES LINKED TO VAPORTIMME.COM</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 We are not responsible for the practices employed by Web sites linked to or from our website nor the information or content contained therein. Often links to other websites are provided solely as pointers to information on topics that may be useful to the users of our Web site.
               `}
@@ -179,7 +181,7 @@ class Footer extends Component {
 
             <Divider/>
             <Header>PRIVACY FOR CHILDREN</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 Children under the age of 18 are not allowed to use our web site and/or products. If you are under the age of 21+, you can use this service only in conjunction with permission from your parents or legal guardians.
               `}
@@ -187,16 +189,16 @@ class Footer extends Component {
 
             <Divider/>
             <Header>CONTACT US</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 If you have any questions regarding this Privacy Policy, our website vaportimme.com, or your order with us, please contact us.
               `}
             </p>
-            <p>Phone: 215.693.1905 | Email: vaportimme@gmail.com</p>
+            <p style={{fontSize: '16px'}}>Phone: 215.693.1905 | Email: vaportimme@gmail.com</p>
 
             <Divider/>
             <Header>NOTICE</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 Vaportimme.com reserves the right to amend this Privacy Policy at any time by direct electronic notification to you or by posting the amended terms on this page. All amended terms shall automatically be effective for new users or new purchases immediately on posting and, in all other cases, 30 days after they are initially posted and dated, unless otherwise specified in a notice to you.
               `}
@@ -218,7 +220,7 @@ class Footer extends Component {
           
 
             <Header>ENTERING THIS WEBSITE</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 By entering and using this website you are agreeing to the following:
               `}
@@ -231,11 +233,11 @@ class Footer extends Component {
               <Menu.Item>Use of these products is entirely at the risk and discretion of the user and vaportimme.com will not be responsible for any use or misuse of the products sold herein.</Menu.Item>
             </Menu>
 
-            <p>By browsing and entering Vaportimme.com, I certify that all of the above statements are true.</p>
+            <p style={{fontSize: '16px'}}>By browsing and entering Vaportimme.com, I certify that all of the above statements are true.</p>
       
             <Divider/>
             <Header>IMPORTANT NOTE</Header><br/>
-            <p>
+            <p style={{fontSize: '16px'}}>
               {`
                 The statements and Vaporizers shown on this website have not been evaluated by the US Food and Drug Administration (FDA). These Vaporizers are not designed to diagnose, cure, prevent, or treat any disease. Before using a vaporizer, please consult with a licensed health care provider. If you use a Vaporizer, you do so at your own risk. Inhalation is inadvisable and may potentially be harmful. Any comments from user submitted reviews found on this website are related to the users own personal experiences, and are not endorsed, reviewed, or necessarily shared by Vaportimme.com or its affiliates. Vaporizing does not necessarily eliminate any and all toxins found in vaporized substances, so much care should be taken prior to use. You must be 18 or older and respect all local laws to purchase a Vaporizer. By using Vaportimme.com, you acknowledge and agree to abide by our Terms of Use page before making any purchases over the phone.
               `}

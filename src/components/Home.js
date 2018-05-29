@@ -1,11 +1,11 @@
 import React from 'react'
 // import Slider from 'react-slick'
-import Store from '../assets/webp/store.webp'
-import Juice from '../assets/webp/equip_front.webp'
-import CBD from '../assets/webp/cbd.webp'
-import Equip from '../assets/webp/equip.webp'
-import Wheel from '../assets/webp/cbd_wheel.webp'
-import Vaping from '../assets/webp/vaping.webp'
+import Store from '../assets/web/store_medium.jpg'
+import Juice from '../assets/web/juice_medium.jpg'
+import CBD from '../assets/web/cbd_medium.jpg'
+import Equip from '../assets/web/equip_medium.jpg'
+import Wheel from '../assets/web/cbd_wheel.jpg'
+import Vaping from '../assets/web/vaping_medium.jpg'
 import NoSmoking from '../assets/nosmoking.svg'
 import Video from './Video'
 // import Vid1 from '../assets/vid1.jpg'
@@ -27,9 +27,9 @@ import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button,} from 
 
 const styles = {
   container: { marginTop: 10},
-  segment: { margin: 20 },
+  segment: { margin: 20, fontSize: '16px' },
   jumbotron: { marginTop: 25},
-  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '.9em'},
+  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '16px'},
   humanSubtext: {
     position: 'absolute',
     top: 60,
@@ -47,6 +47,7 @@ const styles = {
   itemHead: {
     color: 'purple',
     fontWeight: 'bolder',
+    fontSize: '16px',
     marginRight: 10
   }
 }
@@ -106,12 +107,12 @@ export default props => (
         className='animated fadeInUp cam'
         style={{textAlign: 'center'}}>
 
-        <Button positive onClick={()=> {
+        <Button style={{fontSize: '16px'}} positive onClick={()=> {
           if (window.innerWidth < 600){
             window.scrollTo(0,1800)
-            console.log(600)
+            // console.log(600)
           } else {
-            console.log(800)
+            // console.log(800)
             window.scrollTo(0,800)
           }
           
@@ -134,7 +135,7 @@ export default props => (
           <Item.Image size='small' src={Wheel} />
             <Item.Content>
               <Item.Header as='a' onClick={props.cbd}>Introducing the CBD Oil: Uses, Benefits and Risks </Item.Header>
-              <Item.Meta>Cannabidiol (CBD) oil is used for health benefits, but it is controversial.</Item.Meta>
+              <Item.Meta style={{fontSize: '16px'}}>Cannabidiol (CBD) oil is used for health benefits, but it is controversial.</Item.Meta>
               <Item.Description>
               Source: [Leafly]
               </Item.Description>
@@ -146,7 +147,7 @@ export default props => (
             <Item.Image size='small' src={Vaping} />
             <Item.Content>
               <Item.Header as='a'>Scientists are shocked after testing E-cig Vapor in the Lab</Item.Header>
-              <Item.Meta>Source: [ChurnMag.com].</Item.Meta>
+              <Item.Meta style={{fontSize: '16px'}}>Source: [ChurnMag.com].</Item.Meta>
               <Item.Description>
               </Item.Description>
               <Item.Extra>Read More...</Item.Extra>
@@ -157,24 +158,24 @@ export default props => (
             <Item.Image size='small' src={NoSmoking} />
             <Item.Content>
               <Item.Header as='a'>Benefits of NOT Smoking Cigarettes!</Item.Header>
-              <Item.Meta></Item.Meta>
+              <Item.Meta style={{fontSize: '16px'}}></Item.Meta>
               <Item.Description>
               </Item.Description>
               <Item.Extra>
 
                 <Accordion>
-                  <Accordion.Title active={true} index={0} onClick={this.handleClick}>
+                  <Accordion.Title style={{fontSize: '16px'}} active={true} index={0} onClick={this.handleClick}>
                     <Icon name='dropdown' />
                     Every Cigarette you <strong>DON'T SMOKE</strong> is doing you <strong>GOOD!</strong>
                   </Accordion.Title>
                   <Accordion.Content active={true}>
                     <Menu vertical fluid>
-                      <Menu.Item><span style={styles.itemHead}>in 8 hours</span> Excess carbon monoxide is out of your blood.</Menu.Item>
-                      <Menu.Item><span style={styles.itemHead}>in 5 days</span> You'll feel better from drinking more water and less flavored drinks.</Menu.Item>
-                      <Menu.Item><span style={styles.itemHead}>in 1 week</span> Your sense of taste and smell improves.</Menu.Item>
-                      <Menu.Item><span style={styles.itemHead}>in 12 weeks</span> Your lungs regain the ability to clean themselves.</Menu.Item>
-                      <Menu.Item><span style={styles.itemHead}>in 1 year</span> A pack-a-day smoker will save you $4,000 and risk of heart disease has halved.</Menu.Item>
-                      <Menu.Item><span style={styles.itemHead}>in 5 years</span> Your risk of stroke has dramatically decreased and the overall improvement of quality of life is felt.</Menu.Item>
+                      <Menu.Item style={{fontSize: '16px'}}><span style={styles.itemHead}>in 8 hours</span> Excess carbon monoxide is out of your blood.</Menu.Item>
+                      <Menu.Item style={{fontSize: '16px'}}><span style={styles.itemHead}>in 5 days</span> You'll feel better from drinking more water and less flavored drinks.</Menu.Item>
+                      <Menu.Item style={{fontSize: '16px'}}><span style={styles.itemHead}>in 1 week</span> Your sense of taste and smell improves.</Menu.Item>
+                      <Menu.Item style={{fontSize: '16px'}}><span style={styles.itemHead}>in 12 weeks</span> Your lungs regain the ability to clean themselves.</Menu.Item>
+                      <Menu.Item style={{fontSize: '16px'}}><span style={styles.itemHead}>in 1 year</span> A pack-a-day smoker will save you $4,000 and risk of heart disease has halved.</Menu.Item>
+                      <Menu.Item style={{fontSize: '16px'}}><span style={styles.itemHead}>in 5 years</span> Your risk of stroke has dramatically decreased and the overall improvement of quality of life is felt.</Menu.Item>
                     </Menu>
                   </Accordion.Content>
                 </Accordion>
