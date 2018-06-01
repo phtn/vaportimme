@@ -8,6 +8,9 @@ import Store1 from '../assets/webp/store_lawn.webp'
 // import Store2 from '../assets/store2.jpg'
 import Store3 from '../assets/webp/store_front.webp'
 import Store4 from '../assets/webp/store_sign.webp'
+
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
+
 const styles={
   segment: {
     margin: 10
@@ -29,7 +32,10 @@ class StorePage extends React.Component {
     }
   }
   componentDidMount(){
-    this.getWeather()
+    if (!isSafari){
+      this.getWeather()
+      console.log(isSafari)
+    }
   }
 
   getWeather(){
@@ -71,7 +77,8 @@ class StorePage extends React.Component {
             <Icon name='map pin' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>15 W Ferry Street New Hope PA, 18938</span><br/>
             <Icon name='call' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>215 693 1905</span><br/>
             <Icon name='mail' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>vaportimme@gmail.com</span>
-            <Headr as='h1' style={{color: 'purple', fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: 26}}>{this.state.temperature}&deg;F<span style={{marginLeft: 20,fontSize: 14, fontWeight: 500, marginTop: '-20px'}}>{this.state.weatherDesc}</span></Headr>
+            { !isSafari ? <Headr as='h1' style={{color: 'purple', fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: 26}}>{this.state.temperature}&deg;F<span style={{marginLeft: 20,fontSize: 14, fontWeight: 500, marginTop: '-20px'}}>{this.state.weatherDesc}</span></Headr> : null}
+            
             <Divider/>
 
           </Segment>
