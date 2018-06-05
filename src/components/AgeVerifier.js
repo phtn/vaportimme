@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Image, Grid, Label, Icon } from 'semantic-ui-react'
-import Logo from '../assets/logo.webp'
+import Logo from '../assets/logo.png'
 const styles = {
   container: { 
     height: window.innerHeight,

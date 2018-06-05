@@ -4,10 +4,10 @@ import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button, Header as Headr } from 'semantic-ui-react'
 // import Video from './Video'
 // import LiveCamera from './LiveCamera'
-import Store1 from '../assets/webp/store_lawn.webp'
+import Store1 from '../assets/web/store_lawn.jpg'
 // import Store2 from '../assets/store2.jpg'
-import Store3 from '../assets/webp/store_front.webp'
-import Store4 from '../assets/webp/store_sign.webp'
+import Store3 from '../assets/web/store_front.jpg'
+import Store4 from '../assets/web/store_sign.jpg'
 
 var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
 
