@@ -9,7 +9,7 @@ import Store1 from '../assets/web/store_lawn.jpg'
 import Store3 from '../assets/web/store_front.jpg'
 import Store4 from '../assets/web/store_sign.jpg'
 
-let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
+// let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
 // console.log(isSafari)
 const styles={
   segment: {
@@ -32,28 +32,28 @@ class StorePage extends React.Component {
     }
   }
   componentDidMount(){
-    if (isSafari){
+    // if (isSafari){
       // this.getWeather()
       // console.log(isSafari)
-    }
+    // }
   }
 
-  getWeather(){
-    const APPID = '19087ff6101a2f698425053f2fa21143'
-    const CITY = '5203197'
-    const URL = `https://api.openweathermap.org/data/2.5/weather?id=${CITY}&APPID=${APPID}`
+  // getWeather(){
+  //   const APPID = '19087ff6101a2f698425053f2fa21143'
+  //   const CITY = '5203197'
+  //   const URL = `https://api.openweathermap.org/data/2.5/weather?id=${CITY}&APPID=${APPID}`
 
-    fetch(URL)
-      .then(response => response.json())
-      .then(data => {
-        let kTemp = data.main.temp
-        let temperature = Math.round(((kTemp - 273.15) * 1.8) + 32)
-        let weatherDesc = data.weather[0].description.toUpperCase()
-        this.setState({temperature, weatherDesc})
-        // console.log(data.main.temp, data.weather[0].description)
-        // console.log(this.state.temperature, this.state.weatherDesc)
-      })
-  }
+  //   fetch(URL)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       let kTemp = data.main.temp
+  //       let temperature = Math.round(((kTemp - 273.15) * 1.8) + 32)
+  //       let weatherDesc = data.weather[0].description.toUpperCase()
+  //       this.setState({temperature, weatherDesc})
+  //       // console.log(data.main.temp, data.weather[0].description)
+  //       // console.log(this.state.temperature, this.state.weatherDesc)
+  //     })
+  // }
 
   render(){
     return (

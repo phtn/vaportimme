@@ -113,7 +113,7 @@ class Footer extends Component {
             
             <Grid.Column>
             <img src={Pin} style={styles.pin} alt=''/>
-              <span style={styles.menuItem}>15 W Ferry Street New Hope, PA 18938</span>
+              <a href="https://maps.google.com/?q=15+W+Ferry+St+New+Hope+PA+18938"><span style={styles.menuItem}>15 W Ferry Street New Hope, PA 18938</span></a>
             </Grid.Column>
           
 
