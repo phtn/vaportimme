@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Menu, Icon, Segment, Image, Divider, Card, Button, Header as Headr } from 'semantic-ui-react'
+import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 // import Video from './Video'
 // import LiveCamera from './LiveCamera'
 import Store1 from '../assets/web/store_lawn.jpg'
@@ -9,8 +9,8 @@ import Store1 from '../assets/web/store_lawn.jpg'
 import Store3 from '../assets/web/store_front.jpg'
 import Store4 from '../assets/web/store_sign.jpg'
 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
-
+let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
+// console.log(isSafari)
 const styles={
   segment: {
     margin: 10
@@ -32,9 +32,9 @@ class StorePage extends React.Component {
     }
   }
   componentDidMount(){
-    if (!isSafari){
-      this.getWeather()
-      console.log(isSafari)
+    if (isSafari){
+      // this.getWeather()
+      // console.log(isSafari)
     }
   }
 
@@ -77,7 +77,7 @@ class StorePage extends React.Component {
             <Icon name='map pin' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>15 W Ferry Street New Hope PA, 18938</span><br/>
             <Icon name='call' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>215 693 1905</span><br/>
             <Icon name='mail' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>vaportimme@gmail.com</span>
-            { !isSafari ? <Headr as='h1' style={{color: 'purple', fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: 26}}>{this.state.temperature}&deg;F<span style={{marginLeft: 20,fontSize: 14, fontWeight: 500, marginTop: '-20px'}}>{this.state.weatherDesc}</span></Headr> : null}
+            {/* { !isSafari ? <Headr as='h1' style={{color: 'purple', fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: 26}}>{this.state.temperature}&deg;F<span style={{marginLeft: 20,fontSize: 14, fontWeight: 500, marginTop: '-20px'}}>{this.state.weatherDesc}</span></Headr> : null} */}
             
             <Divider/>
 
