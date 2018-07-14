@@ -2,15 +2,10 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
-// import Video from './Video'
-// import LiveCamera from './LiveCamera'
 import Store1 from '../assets/web/store_lawn.jpg'
-// import Store2 from '../assets/store2.jpg'
 import Store3 from '../assets/web/store_front.jpg'
 import Store4 from '../assets/web/store_sign.jpg'
 
-// let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'])
-// console.log(isSafari)
 const styles={
   segment: {
     margin: 10
@@ -24,42 +19,10 @@ const styles={
 }
 
 class StorePage extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      temperature: '',
-      weatherDesc: ''
-    }
-  }
-  componentDidMount(){
-    // if (isSafari){
-      // this.getWeather()
-      // console.log(isSafari)
-    // }
-  }
-
-  // getWeather(){
-  //   const APPID = '19087ff6101a2f698425053f2fa21143'
-  //   const CITY = '5203197'
-  //   const URL = `https://api.openweathermap.org/data/2.5/weather?id=${CITY}&APPID=${APPID}`
-
-  //   fetch(URL)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       let kTemp = data.main.temp
-  //       let temperature = Math.round(((kTemp - 273.15) * 1.8) + 32)
-  //       let weatherDesc = data.weather[0].description.toUpperCase()
-  //       this.setState({temperature, weatherDesc})
-  //       // console.log(data.main.temp, data.weather[0].description)
-  //       // console.log(this.state.temperature, this.state.weatherDesc)
-  //     })
-  // }
-
   render(){
     return (
       <div>
         <Header/>
-        
         <div style={styles.segment}>
         <Menu attached='top' borderless>
             <Menu.Item color='teal' onClick={this.props.juice} position='left'>
@@ -77,7 +40,6 @@ class StorePage extends React.Component {
             <Icon name='map pin' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>15 W Ferry Street New Hope PA, 18938</span><br/>
             <Icon name='call' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>215 693 1905</span><br/>
             <Icon name='mail' color='grey' style={{height: 10, marginRight: 10}}/><span style={{fontFamily: 'Roboto, sans-serif', fontWeight: 400}}>vaportimme@gmail.com</span>
-            {/* { !isSafari ? <Headr as='h1' style={{color: 'purple', fontFamily: 'Roboto, sans-serif', fontWeight: 100, fontSize: 26}}>{this.state.temperature}&deg;F<span style={{marginLeft: 20,fontSize: 14, fontWeight: 500, marginTop: '-20px'}}>{this.state.weatherDesc}</span></Headr> : null} */}
             
             <Divider/>
 
