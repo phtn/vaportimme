@@ -158,10 +158,7 @@ class Footer extends Component {
                 technical and physical security measures to protect our computing infrastructure and your personal 
                 information from unauthorized use, access, modification or disclosure.
               `}
-
             </p>
-            
-            
 
             <Divider/>
             <Header>VISITOR INFORMATION</Header><br/>

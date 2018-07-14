@@ -8,22 +8,8 @@ import Wheel from '../assets/web/cbd_wheel.jpg'
 import Vaping from '../assets/web/vaping_medium.jpg'
 import NoSmoking from '../assets/nosmoking.svg'
 import Video from './Video'
-// import Vid1 from '../assets/vid1.jpg'
-// import Vid2 from '../assets/vid2.jpg'
-// import YouTubeSvg from '../assets/cctv.svg'
-
-// import Benefits from './Benefits'
 
 import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button,} from 'semantic-ui-react'
-// const settings = {
-//   dots: false,
-//   infinite: true,
-//   arrows: false,
-//   speed: 500,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   // centerMode: true
-// }
 
 const styles = {
   container: { marginTop: 10},
