@@ -1,5 +1,4 @@
 import React from 'react'
-// import Slider from 'react-slick'
 import Store from '../assets/web/store_medium.jpg'
 import Juice from '../assets/web/juice_medium.jpg'
 import CBD from '../assets/web/cbd_medium.jpg'

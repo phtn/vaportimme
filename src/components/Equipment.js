@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 
-// import LiveCamera from './LiveCamera'
 import Equip1 from '../assets/web/equip_medium.jpg'
 import Equip2 from '../assets/web/equip_front.jpg'
 import EleafLogo from '../assets/eleaflogo.png'
@@ -27,7 +26,6 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  // centerMode: true
 }
 
 const styles={
@@ -79,14 +77,7 @@ export default props => (
 
 
       </Segment>
-      {/* <Menu attached width='4'>
-        <Menu.Item></Menu.Item>
-      </Menu> */}
-      <Segment attached >
-        {/* <h2>Get Your Complete Set Now!</h2> */}
-        {/* smok, cloudtank, sigelei, sourin, Istick */}
-        {/* react slick  */}
-        {/* our hardware selection is updated on a weekly basis */}
+           <Segment attached >
         {/* call us */}
         <Slider {...settings} >
           <div >
@@ -115,14 +106,7 @@ export default props => (
             </div>
           </div>
         </Slider>
-        {/* <Menu stackable widths='2'>
-            <Menu.Item>
-                
-            </Menu.Item>
-            <Menu.Item>
-                
-            </Menu.Item>
-        </Menu> */}
+       
         
         <Divider/>
         <p>Accessories</p>

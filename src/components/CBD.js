@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Card, Item } from 'semantic-ui-react'
-
-// import LiveCamera from './LiveCamera'
 import CBD1 from '../assets/cbd_structure.png'
 
 
@@ -20,7 +18,6 @@ const styles={
 
 class CBD extends Component {
   componentDidMount(){
-    // console.log(document.getElementById('aboutCBD').scrollTo(0))
     window.scrollTo(0,0)
   }
   render(){
