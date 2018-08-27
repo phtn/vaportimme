@@ -167,30 +167,22 @@ export default props => (
               </Item.Extra>
             </Item.Content>
           </Item>
-          {/* https://www.youtube.com/watch?v=Fh-s64RNtz0 */}
-          <Grid stackable>
+
+          {/* <Grid stackable>
           <Grid.Row columns={3}>
           <Grid.Column>
+
           <Card fluid >
-            {/* <Image src={Vid1} size='big'style={{maxHeight: 300}}/> */}
             <Card.Content>
               <Video url={'Fh-s64RNtz0'}/>
               <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
               <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
-              {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
             </Card.Content>
-            {/* <Card.Content extra>
-              <a>
-                <Icon name='user' />
-                10 Friends
-              </a>
-            </Card.Content> */}
           </Card>
           </Grid.Column>
 
           <Grid.Column>
           <Card fluid >
-            {/* <Image src={Vid2} style={{maxHeight: 400}}/> */}
             <Card.Content>
             <Video url={'U71YItZTie8'}/>
               <Card.Header>Benefits of CBD</Card.Header>
@@ -202,7 +194,6 @@ export default props => (
 
           <Grid.Column>
           <Card fluid >
-            {/* <Image src={YouTubeSvg} size='medium' style={{Height: 200}} fluid/> */}
             
             <Card.Content>
             <Video url={'94fwcppfqzs'}/>
@@ -213,27 +204,8 @@ export default props => (
           </Card>
           </Grid.Column>
           </Grid.Row>
-          </Grid>
+          </Grid> */}
 
-          
-          {/* <Image primary fluid as='a' href='https://www.youtube.com/watch?v=Fh-s64RNtz0' src={Vid1}/>
-            Doctors Speak Out on the Benefits of CBD
-          <Divider/>
-          <Button primary fluid as='a' href='https://www.youtube.com/embed/Fh-s64RNtz0'>
-            Benefits of CBD
-          </Button> */}
-          {/* https://www.youtube.com/watch?v=U71YItZTie8 */}
-          {/* // 'https://www.youtube.com/embed/3bZb10ZxpBk/?autoplay=0&rel=0&modestbranding=1' */}
-          {/* <Item>
-            <Video url='https://www.youtube.com/embed/Fh-s64RNtz0' title='Fh-s64RNtz0'/>
-          </Item>
-          CBD Benefits
-          <Item>
-            <Video url='https://www.youtube.com/embed/U71YItZTie8' title='U71YItZTie8'/>
-          </Item> */}
-          
-          {/* vapesocietysupplies.com */}
-  
         </Item.Group>
       </Segment>
     </div>
