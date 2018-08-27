@@ -175,7 +175,7 @@ export default props => (
           <Card fluid >
             {/* <Image src={Vid1} size='big'style={{maxHeight: 300}}/> */}
             <Card.Content>
-              <Video url={'https://www.youtube.com/embed/Fh-s64RNtz0'}/>
+              <Video url={'Fh-s64RNtz0'}/>
               <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
               <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
               {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
@@ -193,7 +193,7 @@ export default props => (
           <Card fluid >
             {/* <Image src={Vid2} style={{maxHeight: 400}}/> */}
             <Card.Content>
-            <Video url={'https://www.youtube.com/embed/U71YItZTie8'}/>
+            <Video url={'U71YItZTie8'}/>
               <Card.Header>Benefits of CBD</Card.Header>
               <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
             </Card.Content>
@@ -206,7 +206,7 @@ export default props => (
             {/* <Image src={YouTubeSvg} size='medium' style={{Height: 200}} fluid/> */}
             
             <Card.Content>
-            <Video url={'https://youtube.com/embed/live_stream?channel=UCpUl_Mm277YgWv2wFvObFPw'}/>
+            <Video url={'94fwcppfqzs'}/>
               <Card.Header>New Hope Live</Card.Header>
               <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
             </Card.Content>
