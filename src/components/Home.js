@@ -6,7 +6,7 @@ import Equip from '../assets/web/equip_medium.jpg'
 import Wheel from '../assets/web/cbd_wheel.jpg'
 import Vaping from '../assets/web/vaping_medium.jpg'
 import NoSmoking from '../assets/nosmoking.svg'
-import Video from './Video'
+// import Video from './Video'
 
 import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button,} from 'semantic-ui-react'
 
