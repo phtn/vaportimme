@@ -10,11 +10,9 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-slick": "^0.23.1",
-    "react-youtube": "^7.6.0",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.1",
-    "slick-carousel": "^1.8.1",
-    "video-react": "^0.10.4"
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
