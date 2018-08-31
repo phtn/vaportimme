@@ -74,7 +74,6 @@ class StorePage extends React.Component {
           </Segment>
         </div>
 
-        <Footer/>
       </div>
     )
   }

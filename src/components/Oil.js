@@ -125,7 +125,6 @@ export default props => (
       </Segment>
     </div>
 
-    <Footer />
   
   </div>
 )

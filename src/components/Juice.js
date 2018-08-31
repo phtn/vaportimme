@@ -128,7 +128,6 @@ export default props => (
       
     </div>
 
-    <Footer />
     
   </div>
 )
