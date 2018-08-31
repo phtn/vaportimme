@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import { NavLink } from 'react-router-dom'
 import Footer from './Footer'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
@@ -45,7 +45,6 @@ const styles={
 
 export default props => (
   <div>
-    <Header/>
     
     <div style={styles.segment}>
     <Menu attached='top' borderless>
@@ -54,7 +53,9 @@ export default props => (
           <p style={styles.title}>EQUIPMENT</p>
         </Menu.Item>
         <Menu.Item color='teal' onClick={props.back} position='right'>
+          <NavLink to='/home'>
           <Icon name='home' size='big' color='purple'/> 
+          </NavLink>
         </Menu.Item>
       </Menu>
 

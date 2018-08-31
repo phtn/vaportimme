@@ -7,6 +7,7 @@ import Wheel from '../assets/web/cbd_wheel.jpg'
 import Vaping from '../assets/web/vaping_medium.jpg'
 import NoSmoking from '../assets/nosmoking.svg'
 // import Video from './Video'
+import { NavLink } from 'react-router-dom'
 
 import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button,} from 'semantic-ui-react'
 
@@ -43,39 +44,47 @@ export default props => (
         <Grid padded='horizontally'>
           <Grid.Row columns={4} textAlign='center'>
           <Grid.Column textAlign='center'>
+            <NavLink to='/store'>
             <Card color='purple' centered className='animated fadeInUp cardOne' onClick={props.store}>
               <Image src={Store} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>STORE</Card.Header>
               </Card.Content>
             </Card>
+            </NavLink>
           </Grid.Column>
 
           <Grid.Column textAlign='center'>
+            <NavLink to='/cbd'>
             <Card color='purple' centered className='animated fadeInUp cardOne' onClick={props.oil}>
               <Image src={CBD} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>CBD</Card.Header>
               </Card.Content>
             </Card>
+            </NavLink>
           </Grid.Column>
 
           <Grid.Column>
+            <NavLink to='/juice'>
             <Card color='purple' centered className='animated fadeInUp cardTwo card-2' onClick={props.juice}>
               <Image src={Juice} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>JUICE</Card.Header>
               </Card.Content>
-          </Card>
+            </Card>
+            </NavLink>
           </Grid.Column>
 
           <Grid.Column>
+            <NavLink to='/equipment'>
             <Card color='purple' centered className='animated fadeInUp cardThree' onClick={props.equip}>
               <Image src={Equip} />
               <Card.Content>
                 <Card.Header style={styles.cardHeader}>EQUIP</Card.Header>
               </Card.Content>
-          </Card>
+            </Card>
+            </NavLink>
           </Grid.Column>
 
           </Grid.Row>
@@ -110,14 +119,10 @@ export default props => (
       
       <Segment style={styles.segment} >
         
-        
-        
         <Item.Group divided>
 
-          
-  
           <Item>
-          <Item.Image size='small' src={Wheel} />
+            <Item.Image size='small' src={Wheel} />
             <Item.Content>
               <Item.Header as='a' onClick={props.cbd}>Introducing the CBD Oil: Uses, Benefits and Risks </Item.Header>
               <Item.Meta style={{fontSize: '16px'}}>Cannabidiol (CBD) oil is used for health benefits, but it is controversial.</Item.Meta>
@@ -169,41 +174,41 @@ export default props => (
           </Item>
 
           {/* <Grid stackable>
-          <Grid.Row columns={3}>
-          <Grid.Column>
+            <Grid.Row columns={3}>
+            <Grid.Column>
 
-          <Card fluid >
-            <Card.Content>
-              <Video url={'Fh-s64RNtz0'}/>
-              <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
-              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
-            </Card.Content>
-          </Card>
-          </Grid.Column>
+            <Card fluid >
+              <Card.Content>
+                <Video url={'Fh-s64RNtz0'}/>
+                <Card.Header>Doctors Speak Out on the Benefits of CBD</Card.Header>
+                <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
+              </Card.Content>
+            </Card>
+            </Grid.Column>
 
-          <Grid.Column>
-          <Card fluid >
-            <Card.Content>
-            <Video url={'U71YItZTie8'}/>
-              <Card.Header>Benefits of CBD</Card.Header>
-              <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
-            </Card.Content>
-          
-          </Card>
-          </Grid.Column>
-
-          <Grid.Column>
-          <Card fluid >
+            <Grid.Column>
+            <Card fluid >
+              <Card.Content>
+              <Video url={'U71YItZTie8'}/>
+                <Card.Header>Benefits of CBD</Card.Header>
+                <Card.Meta><Icon name='youtube' color='red'/>&nbsp;<span style={{color: '#666'}}>YouTube</span></Card.Meta>
+              </Card.Content>
             
-            <Card.Content>
-            <Video url={'94fwcppfqzs'}/>
-              <Card.Header>New Hope Live</Card.Header>
-              <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
-            </Card.Content>
-          
-          </Card>
-          </Grid.Column>
-          </Grid.Row>
+            </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+            <Card fluid >
+              
+              <Card.Content>
+              <Video url={'94fwcppfqzs'}/>
+                <Card.Header>New Hope Live</Card.Header>
+                <Card.Meta><Icon name='video' color='purple'/>&nbsp;<span style={{color: '#666'}}>Watch it live</span></Card.Meta>
+              </Card.Content>
+            
+            </Card>
+            </Grid.Column>
+            </Grid.Row>
           </Grid> */}
 
         </Item.Group>

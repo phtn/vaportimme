@@ -1,11 +1,10 @@
 import React from 'react'
 import { Item, Menu, Segment, Icon, Image, Message } from 'semantic-ui-react'
-import Header from './Header'
 import Juices from '../static/juices'
 import Footer from './Footer'
 import Dropper from '../assets/dropper.svg'
 import Droplet from '../assets/droplet.svg'
-
+import { NavLink } from 'react-router-dom'
 
 const styles = {
   container: {
@@ -37,8 +36,6 @@ const styles = {
 export default props => (
   <div style={styles.container}>
     
-    <Header />
-    
     <div style={styles.segment}>
       <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.juice} position='left'>
@@ -47,7 +44,9 @@ export default props => (
         </Menu.Item>
         
         <Menu.Item color='teal' onClick={props.back} position='right'>
-          <Icon name='home' size='big' color='purple'/> 
+          <NavLink to='/home'>
+            <Icon name='home' size='big' color='purple'/>
+          </NavLink>
         </Menu.Item>
       </Menu>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import { NavLink } from 'react-router-dom'
 import Footer from './Footer'
 import { Segment, Menu, Icon, Image } from 'semantic-ui-react'
 import Droplet from '../assets/droplet.svg'
@@ -48,8 +48,6 @@ const styles = {
 export default props => (
   <div style={styles.container}>
     
-    <Header />
-    
     <div style={styles.segment}>
     <Menu attached='top' borderless>
         <Menu.Item color='teal' onClick={props.oil} position='left'>
@@ -57,7 +55,9 @@ export default props => (
           <p style={styles.titleBar}>CBD OIL</p>
         </Menu.Item>
         <Menu.Item color='teal' onClick={props.back} position='right'>
-          <Icon name='home' size='big' color='purple'/> 
+          <NavLink to='/home'>
+            <Icon name='home' size='big' color='purple'/> 
+          </NavLink>
         </Menu.Item>
       </Menu>
 

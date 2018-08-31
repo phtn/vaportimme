@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import { NavLink } from 'react-router-dom'
 import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 import Store1 from '../assets/web/store_lawn.jpg'
@@ -22,7 +22,6 @@ class StorePage extends React.Component {
   render(){
     return (
       <div>
-        <Header/>
         <div style={styles.segment}>
         <Menu attached='top' borderless>
             <Menu.Item color='teal' onClick={this.props.juice} position='left'>
@@ -30,7 +29,9 @@ class StorePage extends React.Component {
               <p style={styles.title}>STORE</p>
             </Menu.Item>
             <Menu.Item color='teal' onClick={this.props.back} position='right'>
-              <Icon name='home' size='big' color='purple'/> 
+              <NavLink to='/home'>
+                <Icon name='home' size='big' color='purple'/> 
+              </NavLink>
             </Menu.Item>
           </Menu>
           

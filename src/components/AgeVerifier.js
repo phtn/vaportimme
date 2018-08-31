@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button, Image, Grid, Label, Icon } from 'semantic-ui-react'
-import Logo from '../assets/logo.png'
+import { Button, Grid, Label, Icon } from 'semantic-ui-react'
+import { NavLink } from 'react-router-dom'
 const styles = {
   container: { 
-    height: window.innerHeight,
+    height: 400,
     alignItems: 'center',
     justifyContent: 'center',
     display: 'flex'
@@ -22,17 +22,20 @@ const styles = {
 }
 
 export default props => (
-  <div className='App-verify' style={styles.container}>
+  <div style={styles.container}>
     
     <Grid padded>
-      <Grid.Row centered>
+      {/* <Grid.Row centered>
         <Image src={Logo} style={styles.logo} className='verifylogo animated fadeInDown logo' alt='logo'/>   
-      </Grid.Row>
-      <Grid.Row centered>
+      </Grid.Row> */}
+      {/* <Grid.Row centered>
         <h1 style={styles.header}>New Hope's Preferred Custom E-Cigarettte Store</h1>
-      </Grid.Row>
+      </Grid.Row> */}
       <Grid.Row centered>
-        <Button style={{fontSize: '16px'}} positive className='yup animated fadeInUp'  onClick={props.goHome}>I am 18 and over</Button>
+        <NavLink to='/home'>
+        <Button style={{fontSize: '16px'}} positive className='yup animated fadeInUp' >I am 18 and over</Button>
+        </NavLink>
+        
         <Button style={{fontSize: '16px'}} primary as='a' href='https://www.google.com' className='nope animated fadeInUp'>I'm under 18</Button>
       </Grid.Row>
 
