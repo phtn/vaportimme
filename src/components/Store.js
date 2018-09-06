@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Footer from './Footer'
 import { Menu, Icon, Segment, Image, Divider, Card, Button } from 'semantic-ui-react'
 import Store1 from '../assets/web/store_lawn.jpg'
 import Store3 from '../assets/web/store_front.jpg'

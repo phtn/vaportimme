@@ -10,7 +10,6 @@ import MC from '../assets/mastercard.svg'
 import AMEX from '../assets/amex.svg'
 import DISC from '../assets/discover.svg'
 
-
 const styles = {
   container: {
     backgroundColor: '#222',
@@ -54,9 +53,6 @@ const styles = {
     height: 40
   }
 }
-
-
-
 
 class Footer extends Component {
   constructor(props){
@@ -115,7 +111,6 @@ class Footer extends Component {
             <img src={Pin} style={styles.pin} alt=''/>
               <a href="https://maps.google.com/?q=15+W+Ferry+St+New+Hope+PA+18938"><span style={styles.menuItem}>15 W Ferry Street New Hope, PA 18938</span></a>
             </Grid.Column>
-          
 
           </Grid.Row>
           <Grid.Row columns={4}>

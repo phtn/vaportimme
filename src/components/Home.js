@@ -97,24 +97,33 @@ export default props => (
 
     <div style={styles.jumbotron}>
 
-      <div 
+      {/* <div 
         className='animated fadeInUp cam'
         style={{textAlign: 'center'}}>
-
         <Button style={{fontSize: '16px'}} positive onClick={()=> {
           if (window.innerWidth < 600){
             window.scrollTo(0,1800)
-            // console.log(600)
           } else {
-            // console.log(800)
             window.scrollTo(0,800)
           }
-          
         }}>
           <Icon name='video camera'/>
           View Live Cam
         </Button>
-      
+      </div> */}
+
+      <div 
+        className='animated fadeInUp cam'
+        style={{textAlign: 'center'}}>
+        <Button 
+          style={{fontSize: '16px'}}
+          positive
+          as='a'
+          href='https://youtube.com/embed/94fwcppfqzs'
+        >
+          <Icon name='video camera'/>
+          View Live Cam
+        </Button>
       </div>
       
       <Segment style={styles.segment} >

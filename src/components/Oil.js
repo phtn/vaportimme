@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Footer from './Footer'
 import { Segment, Menu, Icon, Image } from 'semantic-ui-react'
 import Droplet from '../assets/droplet.svg'
 import Dropper from '../assets/dropper.svg'
