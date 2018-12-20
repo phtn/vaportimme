@@ -1,6 +1,6 @@
 import React from 'react'
-import { Item, Menu, Segment, Icon, Image, Message } from 'semantic-ui-react'
-import Juices from '../static/juices'
+import { Menu, Segment, Icon, Image, Message } from 'semantic-ui-react'
+// import Juices from '../static/juices'
 import Dropper from '../assets/dropper.svg'
 import Droplet from '../assets/droplet.svg'
 import { NavLink } from 'react-router-dom'
@@ -120,10 +120,10 @@ export default props => (
       </Menu>
       </Segment>
 
-      <Segment attached='bottom'>
+      {/* <Segment attached='bottom'>
         <h1 style={{fontFamily: 'Roboto, sans-serif', fontWeight: 100, color: 'purple'}}>Juice Flavors</h1>
         <Item.Group items={Juices} divided className='animated fadeInUp'/>
-      </Segment>
+      </Segment> */}
       
     </div>
 
