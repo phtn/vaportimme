@@ -76,6 +76,7 @@ class Footer extends Component {
     this.setState({termsOpen: false})
   }
   render(){
+    const date = new Date()
     return (
       <div style={styles.container}>
         <Grid divided='vertically'>
@@ -136,7 +137,7 @@ class Footer extends Component {
         <span style={styles.usageLinks} onClick={()=>this.openTerms()}>Terms of Use</span> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
         <span style={styles.usageLinks} onClick={()=>this.openPrivacy()}>Privacy Policy</span>
         <br/>
-        <span style={styles.bottomText} >Vaportimme LLC New Hope &copy; 2018</span>
+        <span style={styles.bottomText} >Vaportimme LLC New Hope &copy; {date.getFullYear()}</span>
 
 
         <Modal open={this.state.privacyOpen} style={{marginTop: 20}} size='fullscreen' className='animated fadeInUp'>

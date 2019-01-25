@@ -9,18 +9,17 @@ import NoSmoking from '../assets/nosmoking.svg'
 // import Video from './Video'
 import { NavLink } from 'react-router-dom'
 
-import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button,} from 'semantic-ui-react'
+import { Grid, Card, Image, Segment, Item, Accordion, Icon, Menu, Button } from 'semantic-ui-react'
 
 const styles = {
-  container: { marginTop: 10},
+  container: { marginTop: 10 },
   segment: { margin: 20, fontSize: '16px' },
-  jumbotron: { marginTop: 25},
-  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '16px'},
+  jumbotron: { marginTop: 25 },
+  cardHeader: { fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '16px' },
   humanSubtext: {
     position: 'absolute',
     top: 60,
     left: window.innerWidth/15
-
   },
   humanTitle: {
     textAlign: 'center',
@@ -119,10 +118,10 @@ export default props => (
           style={{fontSize: '16px'}}
           positive
           as='a'
-          href='https://youtube.com/embed/94fwcppfqzs'
+          href='https://www.youtube.com/channel/UCpUl_Mm277YgWv2wFvObFPw/live'
         >
           <Icon name='video camera'/>
-          View Live Cam
+          New Hope Live Cam
         </Button>
       </div>
       
